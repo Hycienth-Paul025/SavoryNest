@@ -1,0 +1,37 @@
+.active-btn {
+  background: linear-gradient(30deg, $color-secondary 0%, $color-logo-text 60%);
+  padding: 0.6rem 1.2rem;
+  border-radius: 0.7rem;
+  color: $color-white;
+
+  &:hover {
+    color: $color-white;
+  }
+
+  /* add active :active */
+}
+
+.cta-btn {
+  background: linear-gradient(
+    180deg,
+    $color-secondary 0%,
+    $color-logo-text 60%
+  );
+  padding: 0.6rem 1.2rem;
+  border-radius: 0.7rem;
+  color: $color-white;
+  box-shadow: 0 0.2rem 0.5rem $color-shadow;
+  transition: 0.3s;
+
+  &:active {
+    transform: translateY(2px);
+    box-shadow: 0 0.2rem 0.2rem $color-shadow;
+  }
+}
+
+.filter-btn{
+    font-size: 1.6rem;
+    font-weight: 500;
+    letter-spacing: .11rem;
+   
+}

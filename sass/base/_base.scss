@@ -1,0 +1,38 @@
+*,
+*::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+*::selection{
+  background: #ffd689;
+  color: $color-text;
+}
+
+html{
+   font-size: 62.5%;
+   scroll-behavior: smooth;
+}
+
+
+body {
+   
+  box-sizing: border-box;
+  background: $color-primary;
+}
+
+ul * {
+  list-style: none;
+}
+
+*a,
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+input{
+  outline: 0;
+}

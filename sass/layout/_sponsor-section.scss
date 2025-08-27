@@ -1,0 +1,66 @@
+.sponsors {
+  @include min-sectpad;
+  overflow: hidden;
+
+  &-description {
+    text-align: center;
+    margin: 0 auto;
+    width: 70%;
+  }
+
+  &-content {
+        margin-top: 2.5rem;
+    position: relative;
+    white-space: nowrap;
+
+
+    &:hover .sponsors-carousel{
+        animation-play-state: paused;
+    }
+
+
+    &::after,
+    &::before {
+      content: "";
+      height: 100%;
+      width: 11rem;
+      position: absolute;
+    }
+
+    &::after {
+      left: -4.1rem;
+      top: 0;
+      background: linear-gradient(to right, $color-primary 40%, transparent);
+
+    }
+
+    &::before {
+      right: -4.1rem;
+      z-index: 2;
+      background: linear-gradient(to left, $color-primary 40%, transparent);
+    }
+  }
+
+  &-carousel {
+   display: inline-block;
+   align-items: center;
+    animation: slides 20s linear infinite;
+
+    &-img {
+      width: 20rem;
+      height: 6rem;
+       margin-inline: 3.5rem;
+
+    }
+  }
+}
+
+@keyframes slides {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translatex(-100%);
+  }
+}

@@ -1,0 +1,118 @@
+.hero {
+  flex-basis: 50%;
+  display: inline-block;
+
+  & h1,
+  span {
+    color: #943618;
+  }
+
+  & span {
+    font-size: 4rem;
+    font-weight: 400;
+    text-transform: none;
+  }
+
+  &-description {
+    width: 100%;
+    padding-top: 1.5rem;
+    padding-bottom: 3.5rem;
+    color: $color-black;
+    // max-width: 5.2rem;
+  }
+
+  &-btn {
+    display: flex;
+    column-gap: 1rem;
+    font-size: 1.4rem;
+    
+
+a{
+  background: #943618;
+}
+
+  }
+
+  &-active {
+    display: flex;
+    column-gap: 0.6rem;
+    align-content: center;
+  }
+
+  &-icon {
+    width: 1.5rem;
+    height: 1.2rem;
+    fill: $color-white;
+    align-self: center;
+  }
+
+  /// HERO IMAGE
+
+  &-image {
+    width: 100%;
+    flex-basis: 50%;
+    position: relative;
+
+    & .dish-1,
+    .dish-2 {
+      position: absolute;
+      filter: drop-shadow(0 2px 0.5rem $color-shadow);
+    }
+
+    & .dish-1 {
+      width: 7rem;
+      height: 7rem;
+      top: 0;
+      left: 8rem;
+      animation: display-in 1.4s ease-out;
+      animation-fill-mode: backwards;
+    }
+
+    & .dish-2 {
+      height: 7rem;
+      right: 4rem;
+      bottom: 2rem;
+         animation:  display-late 3s ease-out ;
+      animation-fill-mode: backwards;
+    }
+
+    & .slide-in {
+      filter: drop-shadow(0 0.5rem 1rem $color-shadow);
+      animation: slide-in 2s cubic-bezier(0.61, 1, 0.88, 1);
+      animation-fill-mode: backwards;
+    }
+  }
+}
+
+
+@keyframes display-in {
+  from {
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0.6);
+  }
+}
+
+
+
+@keyframes display-late {
+  from {
+    opacity: 0;
+    transform: scale(0.6);
+  }
+
+}
+
+
+@keyframes slide-in {
+  0%,
+  50% {
+    transform: translateX(30rem) rotate(60deg);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+}

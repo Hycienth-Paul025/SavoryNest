@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SavoryNest Menu</title>
+  <link rel="stylesheet" href="Assets/css/style.css" />
+
+    <link
+      rel="shortcut icon"
+      href="Assets/img/favicon.png"
+      type="image/x-icon"
+    /></head>
+<body>
+
+      <!-- NAVBAR SECTION -->
+    <div class="navbar">
+      <div class="navbar-logo">
+       
+        <h1 class="navbar-logo-text">SavoryNest</h1>
+        <svg class="navbar-logo-img">
+          <use xlink:href="Assets/img/sprite.svg#icon-food"></use>
+        </svg>
+      </div>
+
+      <!--  FOR NAVBAR OVERLAY -->
+      <!--   <div class="navbar-overlay"></div>
+ -->
+
+      <nav class="nav">
+        <ul class="navbar-item">
+          <li class="navbar-list">
+            <a href="#sponsors" class="navbar-link">Sponsors</a>
+          </li>
+          <li class="navbar-list">
+            <a href="menu.html" class="navbar-link">menu</a>
+          </li>
+          <li class="navbar-list">
+            <a href="#about" class="navbar-link">About</a>
+          </li>
+          <li class="navbar-list">
+            <a href="#faq" class="navbar-link">FAQ</a>
+          </li>
+          <li class="navbar-list">
+            <a href="#contact" class="navbar-link active-btn">contact</a>
+          </li>
+        </ul>
+      </nav>
+    
+    </div>
+    
+    
+    <section class="menu" id="menu">
+      <h2 class="tertiary-heading">SavoryNest's Menu</h2>
+
+      <div class="menu-btn">
+        <a href="#" data-filter="all" class="cta-btn filter-btn">All</a>
+        <a href="#" data-filter="vegetables" class="cta-btn filter-btn"
+          >Vegetables</a
+        >
+        <a href="#" data-filter="spaghetti" class="cta-btn filter-btn"
+          >Spaghetti</a
+        >
+        <a href="#" data-filter="inter" class="cta-btn filter-btn"
+          >Intercontinental</a
+        >
+      </div>
+
+      <div class="menu-container">
+        <!-- MENU 1 -->
+
+        <div class="menu-image" data-name="inter">
+          <img src="Assets/img/inter-1.avif" alt="meal" loading="lazy" />
+
+          <div class="menu-image-title">
+            <p class="menu-image-title-description">
+              Empanadas <br />
+              (Latin American or spanish cusines)
+            </p>
+
+            <div class="menu-image-title-rating">
+              <svg class="menu-icon">
+                <use xlink:href="Assets/img/sprite.svg#icon-star"></use>
+              </svg>
+              <p>4.5 / 5</p>
+            </div>
+          </div>
+          <img src="Assets/img/love.gif" alt="love" class="love" />
+        </div>
+
+        <!-- MENU 2 -->
+
+        <div class="menu-image" data-name="inter">
+          <img src="Assets/img/inter-2.jpg" alt="meal" loading="lazy" />
+
+          <div class="menu-image-title">
+            <p class="menu-image-title-description">Gourmet Dish</p>
+
+            <div class="menu-image-title-rating">
+              <svg class="menu-icon">
+                <use xlink:href="Assets/img/sprite.svg#icon-star"></use>
+              </svg>
+              <p>4.8 / 5</p>
+            </div>
+          </div>
+          <img src="Assets/img/love.gif" alt="love" class="love" />
+        </div>
+
+        <!-- MENU 3 -->
+
+        <div class="menu-image" data-name="inter">
+          <img src="Assets/img/inter-3.jpg" alt="meal" loading="lazy" />
+
+          <div class="menu-image-title">
+            <p class="menu-image-title-description">
+              Rotini Pasta with Vegetables <br />
+              ( rotini pasta , kale and zucchini )
+            </p>
+
+            <div class="menu-image-title-rating">
+              <svg class="menu-icon">
+                <use xlink:href="Assets/img/sprite.svg#icon-star"></use>
+              </svg>
+              <p>4.2 / 5</p>
+            </div>
+          </div>
+          <img src="Assets/img/love.gif" alt="love" class="love" />
+        </div>
+
+        <!-- MENU 4 -->
+
+        <div class="menu-image" data-name="inter">
+          <img src="Assets/img/inter-4.avif" alt="meal" loading="lazy" />
+
+          <div class="menu-image-title">
+            <p class="menu-image-title-description">
+              Seared Tuna Steak <br />
+              ( served with a mixed salad )
+            </p>
+
+            <div class="menu-image-title-rating">
+              <svg class="menu-icon">
+                <use xlink:href="Assets/img/sprite.svg#icon-star"></use>
+              </svg>
+              <p>4 / 5</p>
+            </div>
+          </div>
+          <img src="Assets/img/love.gif" alt="love" class="love" />
+        </div>
+
+        <!-- MENU 5 -->
+
+        <div class="menu-image" data-name="vegetables">
+          <img src="Assets/img/veg-1.jpg" alt="meal" loading="lazy" />
+
+          <div class="menu-image-title">
+            <p class="menu-image-title-description">
+              Flexitarian diet food <br />
+              ( grilled fish steak with vegetables )
+            </p>
+
+            <div class="menu-image-title-rating">
+              <svg class="menu-icon">
+                <use xlink:href="Assets/img/sprite.svg#icon-star"></use>
+              </svg>
+              <p>4 / 5</p>
+            </div>
+          </div>
+          <img src="Assets/img/love.gif" alt="love" class="love" />
+        </div>
+
+        <!-- MENU 6 -->
+
+        <div class="menu-image" data-name="spaghetti">
+          <img src="Assets/img/spag-1.jpg" alt="meal" loading="lazy" />
+
+          <div class="menu-image-title">
+            <p class="menu-image-title-description">Spaghetti and Meatballs</p>
+
+            <div class="menu-image-title-rating">
+              <svg class="menu-icon">
+                <use xlink:href="Assets/img/sprite.svg#icon-star"></use>
+              </svg>
+              <p>4.3 / 5</p>
+            </div>
+          </div>
+          <img src="Assets/img/love.gif" alt="love" class="love" />
+        </div>
+
+        <!-- MENU 7 -->
+
+        <div class="menu-image" data-name="spaghetti">
+          <img src="Assets/img/spag-2.jpg" alt="meal" loading="lazy" />
+
+          <div class="menu-image-title">
+            <p class="menu-image-title-description">Spaghetti and Seafood</p>
+
+            <div class="menu-image-title-rating">
+              <svg class="menu-icon">
+                <use xlink:href="Assets/img/sprite.svg#icon-star"></use>
+              </svg>
+              <p>4.3 / 5</p>
+            </div>
+          </div>
+          <img src="Assets/img/love.gif" alt="love" class="love" />
+        </div>
+
+        <!-- MENU 8 -->
+
+        <div class="menu-image" data-name="vegetables">
+          <img src="Assets/img/veg-2.avif" alt="meal" loading="lazy" />
+
+          <div class="menu-image-title">
+            <p class="menu-image-title-description">
+              Vegetable-based appetizers
+            </p>
+
+            <div class="menu-image-title-rating">
+              <svg class="menu-icon">
+                <use xlink:href="Assets/img/sprite.svg#icon-star"></use>
+              </svg>
+              <p>4.4 / 5</p>
+            </div>
+          </div>
+          <img src="Assets/img/love.gif" alt="love" class="love" />
+        </div>
+
+        <!-- MENU 9 -->
+
+        <div class="menu-image" data-name="spaghetti">
+          <img src="Assets/img/spag-3.avif" alt="meal" loading="lazy" />
+
+          <div class="menu-image-title">
+            <p class="menu-image-title-description">Italian Spaghetti</p>
+
+            <div class="menu-image-title-rating">
+              <svg class="menu-icon">
+                <use xlink:href="Assets/img/sprite.svg#icon-star"></use>
+              </svg>
+              <p>4.7 / 5</p>
+            </div>
+          </div>
+          <img src="Assets/img/love.gif" alt="love" class="love" />
+        </div>
+
+        <!-- MENU 10 -->
+
+        <div class="menu-image" data-name="spaghetti">
+          <img src="Assets/img/spag-4.jpg" alt="meal" loading="lazy" />
+
+          <div class="menu-image-title">
+            <p class="menu-image-title-description">
+              Neapolitan Pasta <br />
+              (known as Spaghetti alla Marinara)
+            </p>
+
+            <div class="menu-image-title-rating">
+              <svg class="menu-icon">
+                <use xlink:href="Assets/img/sprite.svg#icon-star"></use>
+              </svg>
+              <p>4.8 / 5</p>
+            </div>
+          </div>
+          <img src="Assets/img/love.gif" alt="love" class="love" />
+        </div>
+
+        <!-- MENU 11 -->
+
+        <div class="menu-image" data-name="vegetables">
+          <img src="Assets/img/veg-3.avif" alt="meal" loading="lazy" />
+
+          <div class="menu-image-title">
+            <p class="menu-image-title-description">Mixed green salad</p>
+
+            <div class="menu-image-title-rating">
+              <svg class="menu-icon">
+                <use xlink:href="Assets/img/sprite.svg#icon-star"></use>
+              </svg>
+              <p>4.7 / 5</p>
+            </div>
+          </div>
+          <img src="Assets/img/love.gif" alt="love" class="love" />
+        </div>
+
+        <!-- MENU 12 -->
+
+        <div class="menu-image" data-name="vegetables">
+          <img src="Assets/img/veg-4.avif" alt="meal" loading="lazy" />
+
+          <div class="menu-image-title">
+            <p class="menu-image-title-description">
+              Shrimp and Arugula Salad <br />
+              ( cherry tomatoes, with nuts )
+            </p>
+
+            <div class="menu-image-title-rating">
+              <svg class="menu-icon">
+                <use xlink:href="Assets/img/sprite.svg#icon-star"></use>
+              </svg>
+              <p>4.7 / 5</p>
+            </div>
+          </div>
+          <img src="Assets/img/love.gif" alt="love" class="love" />
+        </div>
+
+        <!-- MENU 13 -->
+
+        <div class="menu-image" data-name="inter">
+          <img src="Assets/img/inter-5.jpg" alt="meal" loading="lazy" />
+
+          <div class="menu-image-title">
+            <p class="menu-image-title-description">
+              Thai Larb (Isan) <br />
+              ( Thailand Cultural Cuisines )
+            </p>
+
+            <div class="menu-image-title-rating">
+              <svg class="menu-icon">
+                <use xlink:href="Assets/img/sprite.svg#icon-star"></use>
+              </svg>
+              <p>4.8 / 5</p>
+            </div>
+          </div>
+          <img src="Assets/img/love.gif" alt="love" class="love" />
+        </div>
+
+        <!-- MENU 14 -->
+
+        <div class="menu-image" data-name="inter">
+          <img src="Assets/img/inter-6.jpg" alt="meal" loading="lazy" />
+
+          <div class="menu-image-title">
+            <p class="menu-image-title-description">
+              Steak Dinner <br />
+              ( Italian Cuisines )
+            </p>
+
+            <div class="menu-image-title-rating">
+              <svg class="menu-icon">
+                <use xlink:href="Assets/img/sprite.svg#icon-star"></use>
+              </svg>
+              <p>5 / 5</p>
+            </div>
+          </div>
+          <img src="Assets/img/love.gif" alt="love" class="love" />
+        </div>
+
+        <!-- MENU 15 -->
+
+        <div class="menu-image" data-name="vegetables">
+          <img src="Assets/img/veg-5.avif" alt="meal" loading="lazy" />
+
+          <div class="menu-image-title">
+            <p class="menu-image-title-description">hummus with vegetables.</p>
+
+            <div class="menu-image-title-rating">
+              <svg class="menu-icon">
+                <use xlink:href="Assets/img/sprite.svg#icon-star"></use>
+              </svg>
+              <p> 4.5 / 5</p>
+            </div>
+          </div>
+          <img src="Assets/img/love.gif" alt="love" class="love" />
+        </div>
+        
+      </div>
+
+      <a href="#" class="cta-btn filter-btn " id="display">SHOW MORE</a>
+    </section>
+
+    <section class="root"></section>
+
+</body>
+<script defer src="Assets/js/script.js"></script>
+</html>

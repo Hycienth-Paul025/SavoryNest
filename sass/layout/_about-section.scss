@@ -1,0 +1,118 @@
+.about {
+  @include sectpad;
+  display: flex;
+  overflow: hidden;
+  //background: $color-secondary;
+
+  &-text {
+    font-size: 1.7rem;
+    width: 60%;
+    margin: 0 auto;
+  }
+
+
+&-details{
+   display: grid;
+   align-items: center;
+   grid-gap: 3rem;
+   grid-auto-flow: column;
+  padding: 5rem;
+
+
+  &-card{
+   width: 26rem;
+   height: 100%;
+padding: 1.5rem;
+box-shadow: 0 .2rem .7rem $color-shadow;
+border-radius: 1rem;
+background: $color-white;
+
+&-image{
+  display: flex;
+  column-gap: 2rem;
+  align-items: center;
+  //justify-content: center;
+    padding-bottom: 2rem;
+
+
+  & img{
+    height: 3rem;
+  }
+
+  .card-title{
+    font-size: 1.8rem;
+    font-weight: 700;
+  }
+
+  .card-description{
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding-inline: 2rem;
+  }
+}
+
+  }
+
+
+}
+
+
+
+  &-chef {
+    position: relative;
+    padding-block: 1.3rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & .chef {
+      display: block;
+      justify-self: center;
+      border-radius: 1rem;
+      width: 100%;
+      max-width: 65rem;
+      mask-image: linear-gradient(
+        to top,
+        transparent 0%,
+        transparent 4%,
+        $color-white 50%
+      );
+    }
+
+    .chef-title {
+      font-size: 4rem;
+      font-weight: 700;
+      color: $color-blue;
+    }
+
+    span {
+      font-size: 2rem;
+      color: $color-blue;
+      font-weight: 600;
+      font-style: italic;
+      padding-bottom: 0.3rem;
+    }
+
+   
+  }
+
+  /// About Image
+
+  &-images {
+    box-shadow: 0 0.5rem 1rem $color-shadow;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+
+    img {
+      width: 100%;
+      // filter: drop-shadow(1rem 0.5rem 0.9rem $color-shadow);
+    }
+  }
+
+
+  }

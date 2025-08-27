@@ -1,0 +1,117 @@
+.menu {
+  @include sectpad;
+  text-align: center;
+  position: relative;
+
+
+  &-btn {
+    display: flex;
+    column-gap: 1rem;
+    justify-content: center;
+  }
+
+  &-container {
+    padding-block: 1.5rem;
+    padding-inline: .5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+    justify-items: center;
+    //justify-self: center;
+    grid-gap: 1.2rem;
+    align-items: center;
+    margin-top: 6rem;
+    margin-bottom: 5rem;
+    text-align: initial;
+      overflow: hidden;
+    height: 42rem;   
+    transition: 0.4s ease;
+    // will-change: height;
+
+    &.show-more {
+      height: auto;
+    }
+  }
+
+  &-image {
+    width: 100%;
+    height: 40rem;
+    background: $color-white;
+    padding-bottom: 1.5rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 2px 0.6rem $color-shadow;
+    border: 2px solid transparent;
+    transition: border 0.3s;
+
+    &:hover {
+      border: 2px solid $color-heading;
+    }
+
+    & .love {
+      height: 2rem;
+      width: 2rem;
+      margin-left: 1rem;
+    }
+
+    & img {
+      width: 100%;
+      height: 30rem;
+      object-fit: cover;
+      transition: transform 0.3s;
+
+      // &:hover {
+      //   transform: scaleY(1.03);
+      // }
+    }
+
+    &-title {
+      // background: red;
+      //  display: inline-block;
+      display: flex;
+      justify-content: space-between;
+      padding: 0.5rem;
+
+      &-description {
+        font-size: 1.4rem;
+        line-height: 1.4;
+
+        &::first-line {
+          font-size: 1.8rem;
+          color: $color-black;
+          font-weight: 700;
+        }
+      }
+
+      &-rating {
+        display: flex;
+        column-gap: 1rem;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        box-shadow: 1px 2px 5px $color-shadow;
+        border-radius: 0.5rem;
+
+        & svg {
+          width: 2rem;
+          height: 2rem;
+          fill: #ffca12;
+        }
+
+        & p {
+          font-size: 1.3rem;
+          font-weight: 500;
+          color: rgba($color-black, 0.8);
+        }
+
+
+      }
+
+
+    }
+
+
+  }
+
+
+}
+

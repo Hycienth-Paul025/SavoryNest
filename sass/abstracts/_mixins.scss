@@ -1,0 +1,12 @@
+@mixin navpad {
+  padding: 2rem 5.5rem;
+  //box-shadow: 0rem .1rem .2rem rgba($color-black, .3);
+}
+
+@mixin sectpad {
+  padding: 7rem 5.5rem;
+}
+
+@mixin min-sectpad {
+  padding: 4.7rem 4rem;
+}

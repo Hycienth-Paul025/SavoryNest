@@ -1,0 +1,51 @@
+
+
+
+
+body {
+  font-family: $primary-font;
+  color: $color-text;
+  font-weight: 300;
+}
+
+.primary-heading {
+  font-size: 6rem;
+  font-weight: 700;
+  color: $color-heading;
+  letter-spacing: 0.2rem;
+  text-transform: capitalize;
+  line-height: 1;
+}
+
+.secondary-heading {
+  font-size: 5.5rem;
+  font-weight: 700;
+  color: $color-heading;
+  letter-spacing: 0.2rem;
+  line-height: 1;
+  padding: 2rem;
+  text-align: center;
+}
+
+.tertiary-heading{
+   font-size: 4rem;
+  font-weight: 700;
+  color: $color-heading;
+  letter-spacing: 0.1rem;
+  line-height: 1;
+  padding: 2rem;
+  text-align: center;
+}
+
+
+
+.small-font{
+  font-size: 1.5rem;
+  line-height: 1.5;
+  font-weight: inherit;
+}
+
+.normal-font{
+  font-size: 1.7rem;
+  line-height: 1.7;
+}
