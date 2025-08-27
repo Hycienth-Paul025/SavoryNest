@@ -699,6 +699,9 @@ body {
 .testimonials {
   padding: 7rem 5.5rem;
 }
+.testimonials p {
+  text-align: center;
+}
 
 .contact-description {
   font-size: 1.5rem;
