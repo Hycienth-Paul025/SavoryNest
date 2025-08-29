@@ -12,20 +12,13 @@
 
   &-container {
     padding-block: 1.5rem;
-    padding-inline: .5rem;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
     justify-items: center;
-    //justify-self: center;
     grid-gap: 1.2rem;
     align-items: center;
-    margin-top: 6rem;
-    margin-bottom: 5rem;
+    margin-block: 6rem 5rem;
     text-align: initial;
-      overflow: hidden;
-    height: 42rem;   
-    transition: 0.4s ease;
-    // will-change: height;
 
     &.show-more {
       height: auto;

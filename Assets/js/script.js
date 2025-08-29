@@ -1,16 +1,3 @@
-/////  NAVBAR SEARCH BUTTON FUNCTION
-const search = document.querySelector(".form-icon");
-
-const input = document.querySelector(".navbar-form-input");
-
-search.addEventListener("click", (e) => {
-  if (window.innerWidth <= 900) {
-    e.preventDefault();
-    input.classList.add("open");
-  } else {
-    return;
-  }
-});
 
 /// MENU BUTTON FUNCTION
 
@@ -18,11 +5,8 @@ search.addEventListener("click", (e) => {
 
 //// MENU CTA BUTTON FUNCTION
 
-const MenuContainer = document.querySelector(".menu-container");
 
-const menuBtn = document.getElementById("display");
 
-console.log(menuBtn);
 /* 
 menuBtn.addEventListener("click", (e) => {
   e.preventDefault();
@@ -36,7 +20,7 @@ menuBtn.addEventListener("click", (e) => {
 
   console.log("clicked");
 }); */
-
+ 
 
 
 //// CAROUSEL FUNCTION
@@ -44,6 +28,7 @@ menuBtn.addEventListener("click", (e) => {
 const duplicate = document.querySelector(".sponsors-carousel").cloneNode(true);
 
 let parent = document.querySelector(".sponsors-content").appendChild(duplicate);
+
 
 
 /// ACCORDION FUNCTION

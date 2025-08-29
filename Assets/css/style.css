@@ -190,6 +190,8 @@ body {
   font-size: 1.6rem;
   font-weight: 500;
   letter-spacing: 0.11rem;
+  border: none;
+  cursor: pointer;
 }
 
 .hero {
@@ -507,18 +509,13 @@ body {
 }
 .menu-container {
   padding-block: 1.5rem;
-  padding-inline: 0.5rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
   justify-items: center;
   grid-gap: 1.2rem;
   align-items: center;
-  margin-top: 6rem;
-  margin-bottom: 5rem;
+  margin-block: 6rem 5rem;
   text-align: initial;
-  overflow: hidden;
-  height: 42rem;
-  transition: 0.4s ease;
 }
 .menu-container.show-more {
   height: auto;
@@ -691,22 +688,102 @@ body {
   padding-bottom: 5rem;
 }
 
+.testimonials {
+  padding: 7rem 5.5rem;
+}
+.testimonials strong {
+  font-size: 9rem;
+  text-shadow: 0 0.2rem 0.5rem #fb8a3c;
+}
+.testimonials-description {
+  text-align: center;
+  font-weight: 500;
+}
+.testimonials-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-gap: 2rem;
+  margin-top: 5rem;
+}
+.testimonials-card {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.3);
+}
+.testimonials-text {
+  font-weight: 500;
+}
+.testimonials-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+}
+.testimonials-details img {
+  width: 5rem;
+  border-radius: 50%;
+}
+.testimonials-name {
+  font-weight: 600;
+}
+.testimonials-role {
+  font-size: 1.3rem;
+}
+
 .contact {
   padding: 7rem 5.5rem;
   display: block;
 }
-
-.testimonials {
-  padding: 7rem 5.5rem;
-}
-.testimonials p {
-  text-align: center;
-}
-
 .contact-description {
   font-size: 1.5rem;
   text-align: center;
   font-weight: 400;
+}
+.contact-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 6rem;
+  background: linear-gradient(105deg, rgba(255, 255, 255, 0.842) 60%, rgba(255, 255, 255, 0.842) 50%, transparent 50%), no-repeat center url(../.././Assets/img/bg-contact.jpg);
+  box-shadow: 0 0.1rem 1.3rem rgba(0, 0, 0, 0.3);
+  border-radius: 0.8rem;
+  height: 50rem;
+}
+.contact-content {
+  margin-block: 2rem;
+  display: flex;
+  align-items: center;
+}
+.contact-content img {
+  width: 3rem;
+  height: 3rem;
+  margin-right: 1rem;
+}
+.contact-content strong {
+  font-weight: 800;
+}
+.contact-form {
+  padding: 3rem;
+  border-radius: 0.5rem;
+}
+.contact-form-input {
+  padding-block: 1rem;
+}
+.contact-form-input input,
+.contact-form-input textarea {
+  padding-inline: 1rem;
+  outline: none;
+  border: none;
+  width: 50rem;
+  height: 4rem;
+  border-radius: 0.3rem;
+  resize: none;
+  font-family: inherit;
+}
+.contact-form-input textarea {
+  padding-block: 1rem;
+  height: 15rem;
 }
 
 /*# sourceMappingURL=style.css.map */

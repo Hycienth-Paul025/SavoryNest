@@ -1,8 +1,53 @@
-.testimonials{
-    @include sectpad;
+.testimonials {
+  @include sectpad;
   // text-align: center;
 
-  p{
-    text-align: center;
+  strong{
+    font-size: 9rem;
+    text-shadow: 0 .2rem .5rem $color-heading;
   }
+ 
+  &-description{
+    text-align: center;
+    font-weight: 500;
+  }
+
+  &-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-gap: 2rem;
+    margin-top: 5rem;
+  }
+
+  &-card {
+    background: rgba( $color-white,.90);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.2rem 1rem $color-shadow;
+  }
+
+  &-text {
+    font-weight: 500;
+  }
+
+  &-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+
+    img {
+      width: 5rem;
+      border-radius: 50%;
+    }
+  }
+
+&-name{
+font-weight: 600;
+}
+
+&-role{
+font-size: 1.3rem;
+}
+
 }
