@@ -70,7 +70,7 @@ Savorynest (Root)
 │   └── Info Blocks (address, phone, hours)
 │
 ├── 8. FAQ
-│   └── Accordion List (question → answer)
+│   └── Accordion List (question → answer) ✅
 │
 └── 9. Account (if implemented)
     ├── Login / Sign Up

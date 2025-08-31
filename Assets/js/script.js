@@ -1,11 +1,27 @@
+/// MENU FILTERATION BUTTON FUNCTION
 
-/// MENU BUTTON FUNCTION
+const filterBtn = document.querySelectorAll(".filter-btn");
+const filterCards = document.querySelectorAll(".menu-image");
 
+function filterate(e) {
+  document.querySelector(".active").classList.remove("active");
+  e.target.classList.add("active");
+  e.preventDefault();
 
+  let dataFilter = this.getAttribute("data-filter");
+
+  filterCards.forEach((cards) => {
+    cards.classList.add("Inactive");
+
+    if (cards.getAttribute("data-name") === dataFilter || dataFilter == "all") {
+      cards.classList.remove("Inactive");
+    }
+  });
+}
+
+filterBtn.forEach((btns) => btns.addEventListener("click", filterate));
 
 //// MENU CTA BUTTON FUNCTION
-
-
 
 /* 
 menuBtn.addEventListener("click", (e) => {
@@ -20,16 +36,12 @@ menuBtn.addEventListener("click", (e) => {
 
   console.log("clicked");
 }); */
- 
-
 
 //// CAROUSEL FUNCTION
 
 const duplicate = document.querySelector(".sponsors-carousel").cloneNode(true);
 
 let parent = document.querySelector(".sponsors-content").appendChild(duplicate);
-
-
 
 /// ACCORDION FUNCTION
 
@@ -47,13 +59,11 @@ function AcordionEffect() {
   } else {
     this.setAttribute("aria-expanded", "false");
   }
-  console.log("clicked");
 }
 
 accordionEl.forEach((toggle) => {
   toggle.addEventListener("click", AcordionEffect);
 });
-
 
 ///////IMAGE CARD  SLIDING LOOP FUNCTION
 
@@ -153,3 +163,6 @@ autoplay();
 cardContainer.addEventListener("mouseenter", () => clearTimeout(timeoutId));
 
 cardContainer.addEventListener("mouseleave", autoplay);
+
+//// END OF CAROUSEL FUNCTION
+

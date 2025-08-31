@@ -5,8 +5,55 @@
 
 @mixin sectpad {
   padding: 7rem 5.5rem;
+  min-height: 100vh;
 }
 
 @mixin min-sectpad {
   padding: 4.7rem 4rem;
+}
+
+////   BREAKPOINTS
+
+// - phone : 640px
+//  -medium : 768px
+//  - large : 1024px
+//  - X-large : 1280px
+//  - XX-large : 1536px
+
+@mixin screen ($breakpoint){
+
+ @if $breakpoint == phone{
+  @media (max-width: 40em){
+    @content;
+  }
+ }
+
+ 
+ @if $breakpoint == medium{
+  @media (max-width: 48em){
+    @content;
+  }
+ }
+ 
+ @if $breakpoint == large{
+  @media (max-width: 64em){
+    @content;
+  }
+ }
+
+ @if $breakpoint == X-large{
+  @media (min-width: 80em){
+    @content;
+  }
+ }
+
+ @if $breakpoint == XX-large{
+  @media (min-width: 96em){
+    @content;
+  }
+ }
+
+
+
+
 }

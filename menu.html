@@ -1,22 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SavoryNest Menu</title>
-  <link rel="stylesheet" href="Assets/css/style.css" />
+    <link rel="stylesheet" href="Assets/css/style.css" />
 
     <link
       rel="shortcut icon"
       href="Assets/img/favicon.png"
       type="image/x-icon"
-    /></head>
-<body>
-
-      <!-- NAVBAR SECTION -->
+    />
+  </head>
+  <body>
+    <!-- NAVBAR SECTION -->
     <div class="navbar">
       <div class="navbar-logo">
-       
         <h1 class="navbar-logo-text">SavoryNest</h1>
         <svg class="navbar-logo-img">
           <use xlink:href="Assets/img/sprite.svg#icon-food"></use>
@@ -30,35 +29,41 @@
       <nav class="nav">
         <ul class="navbar-item">
           <li class="navbar-list">
+            <a href="index.html#menu" class="navbar-link">Home</a>
+          </li>
+
+          <li class="navbar-list">
             <a href="#sponsors" class="navbar-link">Sponsors</a>
           </li>
-          <li class="navbar-list">
-            <a href="menu.html" class="navbar-link">menu</a>
-          </li>
+
           <li class="navbar-list">
             <a href="#about" class="navbar-link">About</a>
           </li>
+
           <li class="navbar-list">
             <a href="#faq" class="navbar-link">FAQ</a>
           </li>
+
           <li class="navbar-list">
             <a href="#contact" class="navbar-link active-btn">contact</a>
           </li>
         </ul>
       </nav>
-    
     </div>
-    
-    
+
     <section class="menu" id="menu">
       <h2 class="tertiary-heading">SavoryNest's Menu</h2>
 
+      <p class="menu-description normal-font">
+        From local favorites to international delights.
+      </p>
+
       <div class="menu-btn">
-        <a href="#" data-filter="all" class="cta-btn filter-btn">All</a>
+        <a href="#" data-filter="all" class="cta-btn active filter-btn">All</a>
         <a href="#" data-filter="vegetables" class="cta-btn filter-btn"
           >Vegetables</a
         >
-        <a href="#" data-filter="spaghetti" class="cta-btn filter-btn"
+        <a href="#" data-filter="spaghetti" class="filter-btn cta-btn"
           >Spaghetti</a
         >
         <a href="#" data-filter="inter" class="cta-btn filter-btn"
@@ -357,19 +362,15 @@
               <svg class="menu-icon">
                 <use xlink:href="Assets/img/sprite.svg#icon-star"></use>
               </svg>
-              <p> 4.5 / 5</p>
+              <p>4.5 / 5</p>
             </div>
           </div>
           <img src="Assets/img/love.gif" alt="love" class="love" />
         </div>
-        
       </div>
-
-      <a href="#" class="cta-btn filter-btn " id="display">SHOW MORE</a>
     </section>
 
     <section class="root"></section>
-
-</body>
- <script  src="Assets/js/script.js"></script>
- </html>
+  </body>
+  <script src="Assets/js/script.js"></script>
+</html>
