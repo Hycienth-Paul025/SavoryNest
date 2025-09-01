@@ -1,5 +1,5 @@
 .active-btn {
-  background: linear-gradient(30deg, $color-secondary 0%, $color-logo-text 60%);
+  background: linear-gradient(30deg, $color-secondary 0%, $color-heading 60%);
   padding: 0.6rem 1.2rem;
   border-radius: 0.7rem;
   color: $color-white;
@@ -15,7 +15,7 @@
   background: linear-gradient(
     180deg,
     $color-secondary 0%,
-    $color-logo-text 60%
+    $color-heading 60%
   );
   padding: 0.6rem 1.2rem;
   border-radius: 0.7rem;

@@ -410,6 +410,73 @@ body {
   scroll-behavior: auto;
 }
 
+.footer {
+  padding: 4.7rem 4rem;
+  background: #1f2937;
+}
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  row-gap: 3.4rem;
+}
+.footer-left-text {
+  color: #fff;
+}
+.footer-link {
+  width: 3.5rem;
+  height: 3.5rem;
+  fill: #fff;
+  margin-inline: 1rem;
+  padding: 0.5rem;
+  transition: background-color 0.4s ease;
+}
+.footer-link:hover {
+  background-color: #fb8a3c;
+  border-radius: 0.5rem;
+}
+.footer-right {
+  display: flex;
+  justify-content: space-around;
+  width: 20rem;
+  height: 20rem;
+  width: 100%;
+}
+.footer-right h2 {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+  margin-bottom: 2rem;
+}
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+}
+.footer-list li {
+  font-size: 1.6rem;
+  color: #fff;
+}
+.footer-benediction {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5rem;
+}
+.footer-pay {
+  display: flex;
+  column-gap: 2.5rem;
+}
+.footer-pay img {
+  width: 5rem;
+  height: 3.6rem;
+  border-radius: 0.5rem;
+}
+
 .header {
   padding: 7rem 5.5rem;
   min-height: 100vh;
@@ -498,13 +565,10 @@ body {
 .about-collage-container {
   text-align: center;
 }
-.about-collage {
+.about-collage-img {
   width: 100%;
+  margin-top: 2rem;
   box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.3);
-}
-
-.visible {
-  transform: scale(1);
 }
 
 .menu {

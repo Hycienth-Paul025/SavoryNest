@@ -99,13 +99,9 @@
     text-align: center;
   }
 
-  &-collage {
+  &-collage-img {
     width: 100%;
-    // margin-top: 1.6rem;
+   margin-top: 2rem;
     box-shadow: 0 0.1rem 0.4rem $color-shadow;
   }
-}
-
-.visible{
-  transform: scale(1);
 }

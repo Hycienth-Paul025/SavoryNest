@@ -1,0 +1,85 @@
+.footer {
+  @include min-sectpad;
+  background: $color-nav;
+
+  &-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  ///// FOOTER LEFT
+
+  &-left {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3.4rem;
+
+    &-text {
+      color: $color-white;
+    }
+  }
+
+  &-link {
+    width: 3.5rem;
+    height: 3.5rem;
+    fill: $color-white;
+    margin-inline: 1rem;
+    padding: 0.5rem;
+    transition: background-color 0.4s ease;
+
+    &:hover {
+      background-color: $color-heading;
+      border-radius: 0.5rem;
+    }
+  }
+
+  /// FOOTER RIGHT
+
+  &-right {
+    display: flex;
+    justify-content: space-around;
+    width: 20rem;
+    height: 20rem;
+    width: 100%;
+
+    h2 {
+      color: $color-white;
+      font-size: 2rem;
+      font-weight: 600;
+      letter-spacing: 0.2rem;
+      margin-bottom: 2rem;
+    }
+  }
+
+  &-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+
+    li {
+      font-size: 1.6rem;
+      color: $color-white;
+    }
+  }
+
+
+  //// FOOTER BENEDICTION
+  
+  &-benediction{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5rem;
+  }
+
+  &-pay{
+    display: flex;
+    column-gap: 2.5rem;
+    img{
+        width: 5rem;
+        height: 3.6rem;
+        border-radius: .5rem;
+
+    }
+  }
+}
