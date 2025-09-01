@@ -40,9 +40,9 @@
     @content;
   }
  }
-
+ 
  @if $breakpoint == X-large{
-  @media (min-width: 80em){
+  @media (min-width: 80em){ 
     @content;
   }
  }

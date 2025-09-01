@@ -886,4 +886,46 @@ body {
   height: 15rem;
 }
 
+.member {
+  padding: 4.7rem 4rem;
+}
+.member-content {
+  background: linear-gradient(to bottom left, rgba(0, 0, 0, 0.9) 70%, transparent 120%), center no-repeat url(../../Assets/img/member-bg.jpg);
+  background-size: cover;
+  height: 40rem;
+  border-radius: 2rem;
+  text-align: center;
+}
+.member-heading {
+  padding-top: 10rem;
+  font-size: 4rem;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+.member-heading span {
+  font-size: 4.5rem;
+  line-height: 5.5rem;
+  text-transform: capitalize;
+  color: #fb8a3c;
+}
+.member-email {
+  border: none;
+  padding: 1rem;
+  width: 30%;
+  height: 3.5rem;
+  font-size: 1.5rem;
+}
+.member-btn {
+  padding: 0 1rem;
+  background: #fb8a3c;
+  color: #fff;
+  border: none;
+  height: 3.5rem;
+  cursor: pointer;
+  transition: filter 0.3s ease;
+}
+.member-btn:hover {
+  filter: brightness(120%);
+}
+
 /*# sourceMappingURL=style.css.map */
