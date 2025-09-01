@@ -1,0 +1,52 @@
+.member {
+  @include min-sectpad;
+
+  &-content {
+    background: linear-gradient(
+        to bottom left,
+        rgba($color-black, 0.9) 70%,
+        transparent 120%
+      ),
+      center no-repeat url(../../Assets/img/member-bg.jpg);
+    background-size: cover;
+    height: 40rem;
+    border-radius: 2rem;
+    text-align: center;
+  }
+
+  &-heading {
+    padding-top: 10rem;
+    font-size: 4rem;
+    color: $color-white;
+    margin-bottom: 2rem;
+
+    span {
+      font-size: 4.5rem;
+      line-height: 5.5rem;
+
+      text-transform: capitalize;
+      color: $color-heading;
+    }
+  }
+  &-email {
+    border: none;
+    padding: 1rem;
+    width: 30%;
+    height: 3.5rem;
+    font-size: 1.5rem;
+  }
+
+  &-btn {
+    padding: 0 1rem;
+    background: $color-heading;
+    color: $color-white;
+    border: none;
+    height: 3.5rem;
+    cursor:pointer;
+    transition: filter .3s ease;
+
+    &:hover{
+        filter: brightness(120%)
+    }
+  }
+}
