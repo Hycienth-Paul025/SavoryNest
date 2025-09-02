@@ -15,6 +15,7 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth; /*For smooth scrolling across sections*/
 }
 
 body {
@@ -577,6 +578,15 @@ body {
   text-align: center;
   position: relative;
 }
+
+/* New styling for the menu in menu.html */
+.menu-link{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
 .menu-description {
   margin-bottom: 2rem;
 }
