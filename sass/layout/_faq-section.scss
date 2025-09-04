@@ -6,11 +6,18 @@
   }
 
   &-accordion{
-    padding-top: 3rem;
+    margin-top: 4rem;
 
     &-content{
         width: 60%;
         margin: 0 auto;
+
+
+
+   @include screen(tab-port){
+   width: 100%;
+   }
+
     }
   }
 

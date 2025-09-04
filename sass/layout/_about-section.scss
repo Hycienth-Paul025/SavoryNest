@@ -1,33 +1,47 @@
 .about {
   @include sectpad;
+  min-height: 100vh;
   display: flex;
   overflow: hidden;
   //background: $color-secondary;
 
   &-text {
     font-size: 1.7rem;
+    line-height: 2.7rem;
+    text-align: center;
     width: 60%;
     margin: 0 auto;
+
+    @include screen(tab-port) {
+      font-size: 2rem;
+      width: 100%;
+    }
   }
 
   &-details {
     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
     align-items: center;
-    grid-gap: 3rem;
-    grid-auto-flow: column;
-    padding: 5rem;
+    justify-items: center;
+    grid-gap: 2rem;
+    margin: 0 auto;
+    padding-block: 5rem;
 
     &-card {
-      width: 26rem;
+     // width: 27rem;
       height: 100%;
       padding: 1.5rem;
-      box-shadow: 0 0.2rem 0.7rem $color-shadow;
+      box-shadow: 0 0.2rem 2rem rgba($color-shadow, 0.2);
       border-radius: 1rem;
       background: $color-white;
 
+      @include screen(phone) {
+        width: 100%;
+      }
+
       &-image {
         display: flex;
-        column-gap: 2rem;
+        column-gap: 1rem;
         align-items: center;
         //justify-content: center;
         padding-bottom: 2rem;
@@ -37,15 +51,19 @@
         }
 
         .card-title {
-          font-size: 1.8rem;
+          font-size: 2rem;
           font-weight: 700;
+          text-align: center;
+        //  color: $color-black;
         }
+      }
 
-        .card-description {
-          font-size: 1.5rem;
-          font-weight: 500;
-          padding-inline: 2rem;
-        }
+      .card-description {
+        text-align: center;
+        font-size: 1.5rem;
+        line-height: 1.2;
+        font-weight: 500;
+        padding-inline: 0.3rem;
       }
     }
   }
@@ -56,13 +74,19 @@
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    text-align: center;
+
+    @include screen(tab-port) {
+      flex-direction: column-reverse;
+      row-gap: 4rem;
+    }
 
     & .chef {
       border-radius: 1rem;
       width: 100%;
       object-fit: cover;
-      max-width: 60rem;
+      max-width: 50rem;
       mask-image: linear-gradient(
         to top,
         transparent 0%,
@@ -72,7 +96,7 @@
     }
 
     &-description {
-      flex-basis: 48%;
+      flex-basis: 50%;
     }
 
     .chef-title {
@@ -90,6 +114,7 @@
 
     .chef-text {
       margin-top: 2rem;
+      width: 100%;
     }
   }
 
@@ -99,9 +124,16 @@
     text-align: center;
   }
 
+  &-collage-heading{
+
+    @include screen (sm-mobile){
+      font-size: 4rem;
+    }
+  }
+
   &-collage-img {
     width: 100%;
-   margin-top: 2rem;
-    box-shadow: 0 0.1rem 0.4rem $color-shadow;
+    height: 100%;
+    margin-top: 2rem;
   }
 }

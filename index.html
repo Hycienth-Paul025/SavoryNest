@@ -15,7 +15,7 @@
   </head>
   <body>
     <!-- NAVBAR SECTION -->
-    <div class="navbar">
+    <header class="navbar">
       <div class="navbar-logo">
         <h1 class="navbar-logo-text">SavoryNest</h1>
         <svg class="navbar-logo-img">
@@ -54,8 +54,8 @@
           <a href="" class="cta-btn filter-btn">Sign up</a>
           <a href="" class="cta-btn filter-btn">Login </a>
         </div> -->
-      </nav> 
-    </div>
+      </nav>
+    </header>
 
     <!-- MODAL  -->
 
@@ -70,7 +70,7 @@
     </div>
 
     <!-- HEADER  -->
-    <header class="header">
+    <section class="header">
       <div class="hero">
         <h1 class="primary-heading">
           Savor <br />
@@ -127,7 +127,7 @@
           loading="lazy"
         />
       </div>
-    </header>
+    </section>
 
     <!-- ABOUT -->
 
@@ -151,8 +151,8 @@
               <p class="card-title">Fast Delivery</p>
             </div>
             <p class="card-description">
-              Your favorite dishes delivered in minutes. <br />
-              Fresh, fast, hot, and always on time.
+              Your favorite dishes delivered in minutes. Fresh, fast, hot, and
+              always on time.
             </p>
           </div>
 
@@ -162,8 +162,8 @@
               <p class="card-title">Taste Luxury for Less</p>
             </div>
             <p class="card-description">
-              Your favorite dishes delivered in minutes. <br />
-              Fresh, fast, hot, and always on time.
+              “Savor world-class dishes crafted with excellence — all at prices
+              that make luxury dining accessible to everyone.”
             </p>
           </div>
 
@@ -181,12 +181,11 @@
           <div class="about-details-card">
             <div class="about-details-card-image">
               <img src="Assets/img/wifi.gif" alt="about Image" loading="lazy" />
-              <p class="card-title">Stay Connected While You Dine</p>
+              <p class="card-title">Stay Connected While Dining</p>
             </div>
             <p class="card-description">
-              Enjoy complimentary high-speed Wi-Fi at SavoryNest. <br />
-              Perfect for sharing moments, working on the go, or simply browsing
-              while you savor your meal.
+              Enjoy complimentary high-speed Wi-Fi at SavoryNest. Stay
+              connected, share moments, or work with ease while you dine.
             </p>
           </div>
         </div>
@@ -215,7 +214,7 @@
         </div>
 
         <div class="about-collage-container">
-          <h2 class="secondary-heading">
+          <h2 class="secondary-heading about-collage-heading">
             Crafted in the Kitchen, <br />
             Savored at the Table
           </h2>
@@ -225,7 +224,7 @@
           </p>
 
           <img
-            src="Assets/img/collage.jpg"
+            src="Assets/img/kitchen-collage.jpg"
             class="about-collage-img"
             alt="kitchen collage "
             loading="lazy"
@@ -269,7 +268,7 @@
           <img src="Assets/img/inter-2.jpg" alt="meal" loading="lazy" />
 
           <div class="menu-image-title">
-            <p class="menu-image-title-description">Gourmet Dish</p>
+            <p class="menu-image-title-description">Gourmet Dish <br> ( Intercontinental )</p>
 
             <div class="menu-image-title-rating">
               <svg class="menu-icon">
@@ -312,10 +311,7 @@
       <h1 class="tertiary-heading">Powered by Industry-Leading Partners</h1>
 
       <p class="normal-font sponsors-description">
-        "We’re proud to be supported by partners who share our passion for
-        exceptional dining. From premium ingredients to innovative kitchen
-        solutions, our sponsors help us bring the Savorynest experience to life
-        every day."
+       We partner with trusted brands that bring quality, innovation, and reliability to every dining experience.
       </p>
 
       <div class="sponsors-content">
@@ -389,6 +385,7 @@
 
       <div class="cards-container">
         <div class="cards-container-list">
+
           <!-- CARD 1 -->
 
           <div class="cards-container-slide">
@@ -1030,10 +1027,12 @@
               <use xlink:href="Assets/img/sprite.svg#icon-arrow-right"></use>
             </svg>
           </div>
+
         </div>
       </div>
     </section>
 
+ <!-- TESTIMONIALS -->
     <section class="testimonials">
       <h2 class="secondary-heading"><strong>20k+</strong> Testimonials</h2>
 
@@ -1309,7 +1308,7 @@
       </div>
     </section>
 
-    <!--  -->
+    <!-- CONTACT -->
     <section class="contact" id="contact">
       <h2 class="tertiary-heading">Get in Touch</h2>
 
@@ -1343,7 +1342,7 @@
         </div>
 
         <div class="contact-form">
-          <form>
+          <form> 
             <div class="contact-form-input">
               <input type="text" name="name" placeholder="Full name" required />
             </div>
@@ -1351,7 +1350,7 @@
             <div class="contact-form-input">
               <input
                 type="email"
-                name="name"
+                name="email"
                 placeholder="Email Address"
                 required
               />
@@ -1384,14 +1383,26 @@
 
     <section class="member">
       <div class="member-content">
-        <h2 class="member-heading"> Join <span>SavoryNest Membership</span> <br>Save up to 50%.        
+        <h2 class="member-heading">
+          Join <span>SavoryNest Membership</span> <br />Save up to 50%.
         </h2>
-        <form action="#">
-<input type="email" class="member-email" placeholder="name@gmail.com" name="email" id="email" required />
-
-<button class="member-btn">&rarr;</button>
-        </form>
         
+        <h2 class="member-heading">
+         Partner With <span>SavoryNest </span> <br> <span>Elevate Your Brand </span> Through Exceptional Dining.
+        </h2>
+
+        <form action="#">
+          <input
+            type="email"
+            class="member-email"
+            placeholder="name@gmail.com"
+            name="email"
+            id="email"
+            required
+          />
+
+          <button class="member-btn">&rarr;</button>
+        </form>
       </div>
     </section>
 

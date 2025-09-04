@@ -9,11 +9,29 @@
 *::selection{
   background: #ffd689;
   color: $color-text;
-}
+} 
 
 html{
    font-size: 62.5%;
-   //scroll-behavior: smooth;
+
+   @include screen(XX-lg){
+    font-size: 100%;
+  
+   }
+   
+   @include screen(X-lg){
+    font-size: 87.5%;
+   }
+
+   @include screen(tab-port){
+    font-size: 50%;
+   }
+
+   @include screen(mobile-port){
+    font-size: 37.5%;
+   }
+
+
 }
 
 
@@ -21,6 +39,7 @@ body {
    
   box-sizing: border-box;
   background: $color-primary;
+
 }
 
 ul * {
