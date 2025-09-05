@@ -1,3 +1,51 @@
+///// NAVBAR MOBILE FUNCTION
+const NavCont = document.querySelector(".navbar");
+const Navbar = document.querySelector(".navbar nav");
+const NavOverlay = document.querySelector(".navbar-overlay");
+const NavToggle = document.querySelector(".navbar-hamburger");
+const NavClose = document.querySelector(".navbar-close");
+const Navlinks = document.querySelectorAll(".navbar-link");
+
+console.log(NavCont, Navbar, NavOverlay, NavToggle, NavClose, Navlinks);
+
+/////  NAVBAR CONTAINER FUNCTION
+
+function NavFixed() {}
+
+window.offsetHeight >= 50
+  ? NavCont.classList.add("fixed")
+  : NavCont.classList.remove("fixed");
+
+window.addEventListener("scroll", NavFixed);
+
+/// NAV-TOGGLE FUNCTION
+NavToggle.addEventListener("click", () => {
+  Navbar.classList.add("show");
+  NavOverlay.classList.add("visible");
+});
+
+/// NAVCLOsE FUNCTION
+NavClose.addEventListener("click", () => {
+  Navbar.classList.remove("show");
+  NavOverlay.classList.remove("visible");
+});
+
+//OVERLAY FUNCTION
+
+NavOverlay.addEventListener("click", () => {
+  Navbar.classList.remove("show");
+  NavOverlay.classList.remove("visible");
+});
+
+////// NAVBAR LINKS FUNCTIONS
+
+Navlinks.forEach((links) =>
+  links.addEventListener("click", () => {
+    Navbar.classList.remove("show");
+    NavOverlay.classList.remove("visible");
+  })
+);
+
 /// MENU FILTERATION BUTTON FUNCTION
 
 const filterBtn = document.querySelectorAll(".filter-btn");
@@ -22,20 +70,6 @@ function filterate(e) {
 filterBtn.forEach((btns) => btns.addEventListener("click", filterate));
 
 //// MENU CTA BUTTON FUNCTION
-
-/* 
-menuBtn.addEventListener("click", (e) => {
-  e.preventDefault();
-  MenuContainer.classList.toggle("show-more");
-
-  if (MenuContainer.classList.contains("show-more")) {
-    menuBtn.textContent = "SHOW LESS";
-  } else {
-    menuBtn.textContent = "SHOW MORE";
-  }
-
-  console.log("clicked");
-}); */
 
 //// CAROUSEL FUNCTION
 
@@ -165,4 +199,3 @@ cardContainer.addEventListener("mouseenter", () => clearTimeout(timeoutId));
 cardContainer.addEventListener("mouseleave", autoplay);
 
 //// END OF CAROUSEL FUNCTION
-

@@ -40,6 +40,11 @@
       overflow: hidden;
       padding: 2rem 1rem;
       scroll-snap-align: start;
+
+      @include screen (tab-port){
+        padding-inline: .5rem;
+      }
+
     }
 
     &-content {
@@ -50,11 +55,14 @@
       text-align: center;
       box-shadow: 0 0.4rem 1rem $color-shadow;
       border-radius: 0.5rem;
-
       cursor: pointer;
       user-select: none;
       border: 2px solid transparent;
       transition: border 0.4s;
+
+      @include screen(tab-port){
+        padding-inline: 0;
+      }
 
       &:hover {
         border: 2px solid $color-heading;
