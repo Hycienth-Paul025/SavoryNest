@@ -14,7 +14,7 @@
   </head>
   <body>
     <!-- NAVBAR SECTION -->
-    <div class="navbar">
+    <header class="navbar">
       <div class="navbar-logo">
         <h1 class="navbar-logo-text">SavoryNest</h1>
         <svg class="navbar-logo-img">
@@ -23,33 +23,31 @@
       </div>
 
       <!--  FOR NAVBAR OVERLAY -->
-      <!--   <div class="navbar-overlay"></div>
- -->
+      <div class="navbar-overlay"></div>
 
-      <nav class="nav">
+      <nav class="navbar-nav">
+        <svg class="navbar-toggle navbar-close">
+          <use xlink:href="Assets/img/sprite.svg#icon-cross"></use>
+        </svg>
+
         <ul class="navbar-item">
           <li class="navbar-list">
-            <a href="index.html#menu" class="navbar-link">Home</a>
+            <a href="index.html#menu" class="navbar-link"
+              >Home
+             </a>
           </li>
 
           <li class="navbar-list">
-            <a href="#sponsors" class="navbar-link">Sponsors</a>
-          </li>
-
-          <li class="navbar-list">
-            <a href="#about" class="navbar-link">About</a>
-          </li>
-
-          <li class="navbar-list">
-            <a href="#faq" class="navbar-link">FAQ</a>
-          </li>
-
-          <li class="navbar-list">
-            <a href="#contact" class="navbar-link active-btn">contact</a>
+            <a href="about.html" class="navbar-link"
+              >About
+             </a>
           </li>
         </ul>
       </nav>
-    </div>
+      <svg class="navbar-toggle navbar-hamburger">
+        <use xlink:href="Assets/img/sprite.svg#icon-menu"></use>
+      </svg>
+    </header>
 
     <section class="menu" id="menu">
       <h2 class="tertiary-heading">SavoryNest's Menu</h2>
@@ -63,9 +61,7 @@
         <a href="#" data-filter="vegetables" class="cta-btn filter-btn"
           >Vegetables</a
         >
-        <a href="#" data-filter="spaghetti" class="filter-btn cta-btn"
-          >Pasta</a
-        >
+        <a href="#" data-filter="spaghetti" class="filter-btn cta-btn">Pasta</a>
         <a href="#" data-filter="inter" class="cta-btn filter-btn"
           >Intercontinental</a
         >
@@ -374,7 +370,10 @@
           <img src="Assets/img/veg-6.jpg" alt="meal" loading="lazy" />
 
           <div class="menu-image-title">
-            <p class="menu-image-title-description">Grilled Vegetables Salad. <br> ( zucchini, okra, cherry tomatoes) </p>
+            <p class="menu-image-title-description">
+              Grilled Vegetables Salad. <br />
+              ( zucchini, okra, cherry tomatoes)
+            </p>
 
             <div class="menu-image-title-rating">
               <svg class="menu-icon">
@@ -385,7 +384,6 @@
           </div>
           <img src="Assets/img/love.gif" alt="love" class="love" />
         </div>
-
 
         <!-- MENU 17 -->
 
@@ -393,7 +391,10 @@
           <img src="Assets/img/spag-5.jpg" alt="meal" loading="lazy" />
 
           <div class="menu-image-title">
-            <p class="menu-image-title-description"> Penne Pasta with Pesto Sauce <br> ( zucchini, green peas) </p>
+            <p class="menu-image-title-description">
+              Penne Pasta with Pesto Sauce <br />
+              ( zucchini, green peas)
+            </p>
 
             <div class="menu-image-title-rating">
               <svg class="menu-icon">
@@ -404,7 +405,6 @@
           </div>
           <img src="Assets/img/love.gif" alt="love" class="love" />
         </div>
-
 
         <!-- MENU 18 -->
 
@@ -412,7 +412,10 @@
           <img src="Assets/img/spag-6.jpg" alt="meal" loading="lazy" />
 
           <div class="menu-image-title">
-            <p class="menu-image-title-description"> Penne Arrabbiata <br> ( Italian cuisine) </p>
+            <p class="menu-image-title-description">
+              Penne Arrabbiata <br />
+              ( Italian cuisine)
+            </p>
 
             <div class="menu-image-title-rating">
               <svg class="menu-icon">
@@ -423,13 +426,107 @@
           </div>
           <img src="Assets/img/love.gif" alt="love" class="love" />
         </div>
-
-
-
       </div>
     </section>
 
-    <section class="root"></section>
+
+
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Footer left -->
+        <div class="footer-left">
+          <div class="navbar-logo">
+            <h1 class="navbar-logo-text">SavoryNest</h1>
+            <svg class="navbar-logo-img">
+              <use xlink:href="Assets/img/sprite.svg#icon-food"></use>
+            </svg>
+          </div>
+          <p class="footer-left-text small-font">
+            SavoryNest — where tradition, creativity, and fresh flavors create
+            unforgettable moments.
+          </p>
+
+          <div class="footer-left-social">
+            <a href="#">
+              <svg class="footer-link">
+                <use xlink:href="Assets/img/sprite.svg#icon-x"></use>
+              </svg>
+            </a>
+
+            <a href="#">
+              <svg class="footer-link">
+                <use xlink:href="Assets/img/sprite.svg#icon-facebook"></use>
+              </svg>
+            </a>
+
+            <a href="#">
+              <svg class="footer-link">
+                <use xlink:href="Assets/img/sprite.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Footer right -->
+        <div class="footer-right">
+          <div class="footer-right-group">
+            <h2>Support</h2>
+            <ul class="footer-list">
+              <li>Account</li>
+              <li>Support Center</li>
+              <li>Feedback</li>
+              <li>Accessibility</li>
+            </ul>
+          </div>
+
+          <div class="footer-right-group">
+            <h2>Our Menu</h2>
+            <ul class="footer-list">
+              <li>Special</li>
+              <li>Popular</li>
+              <li>Categories</li>
+            </ul>
+          </div>
+
+          <div class="footer-right-group">
+            <h2>Useful Links</h2>
+            <ul class="footer-list">
+              <li>Payment & Tax</li>
+              <li>Terms of Service</li>
+              <li>Privacy Policy</li>
+              <li>About Us</li>
+            </ul>
+          </div>
+
+          <div class="footer-right-group">
+            <h2>Get in touch</h2>
+            <ul class="footer-list">
+              <li>savorynest@gmail.com</li>
+              <li>+123 45656 789 01067</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-benediction">
+        <p class="normal-font">
+          &copy; 2025 Hycienth Paul. All right reserved.
+        </p>
+
+        <div class="footer-pay">
+          <img src="Assets/img/paypal.jpg" alt="card" loading="lazy" />
+
+          <img src="Assets/img/visa.jpg" alt="card" loading="lazy" />
+
+          <img src="Assets/img/america-express.jpg" alt="card" loading="lazy" />
+
+          <img src="Assets/img/mastercard.jpg" alt="card" loading="lazy" />
+
+          <img src="Assets/img/discover.jpg" alt="card" loading="lazy" />
+        </div>
+      </div>
+    </footer>
+
   </body>
   <script src="Assets/js/script.js"></script>
 </html>

@@ -21,6 +21,16 @@
 
 @mixin min-sectpad {
   padding: 4.7rem 4rem;
+
+
+   @include screen(X-lg){
+  padding-inline: 2rem;
+   } 
+
+   @include screen(mobile-port){
+  padding-inline: 1.3rem;
+   }
+
 }
 
 ////   BREAKPOINTS
@@ -32,19 +42,20 @@
 //  - lg : 1280px
 //  - X-lg : 1440px
 //  - XX-lg : 1920px
+//  - XX-lg-port : 1090px
 
 @mixin screen($breakpoint) {
 
 
   @if $breakpoint == sm-mobile {
     @media (max-width: 25.75em) {
-      @content;
+      @content; 
     }
   }
 
 
   @if $breakpoint == mobile-port {
-    @media (max-width: 27.5em) {
+    @media (max-width: 38.13em) {
       @content;
     }
   }
@@ -85,6 +96,12 @@
 
   @if $breakpoint == XX-lg {
     @media (min-width: 120em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == XX-lg-port {
+    @media (max-width: 68.13em) and (orientation: portrait){
       @content;
     }
   }
