@@ -8,6 +8,9 @@
 
   & p {
     text-align: center;
+      @include screen(mobile-port){
+        @include mobile-font;
+      }
   }
 
   &-container {
@@ -62,6 +65,7 @@
 
       @include screen(tab-port){
         padding-inline: 0;
+        height: 36rem;
       }
 
       &:hover {

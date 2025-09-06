@@ -16,6 +16,10 @@
     width: 100%;
    padding-block: 1.5rem 3.5rem;
     color: $color-black;
+
+    @include screen(mobile-port){
+      font-size: 1.8rem;
+    }
   }
 
   &-btn {
