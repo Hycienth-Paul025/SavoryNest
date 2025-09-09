@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Savory &ndash; Nest</title>
+    <title>SavoryNest &ndash; Restaurant</title>
     <!-- css -->
     <link rel="stylesheet" href="Assets/css/style.css" />
 
@@ -134,7 +134,7 @@
     </section>
 
     <!-- ABOUT -->
-
+<main>
     <section class="about" id="about">
       <div class="about-container">
         <h1 class="secondary-heading">About SavoryNest</h1>
@@ -220,7 +220,7 @@
         <div class="about-collage-container">
           <h2 class="secondary-heading about-collage-heading">
             Crafted in the Kitchen, <br />
-            Savored at the Table
+             Savored at the Table
           </h2>
 
           <p class="normal-font">
@@ -228,7 +228,7 @@
           </p>
 
           <img
-            src="Assets/img/kitchen-collage.jpg"
+            src="Assets/img/collage.jpeg"
             class="about-collage-img"
             alt="kitchen collage "
             loading="lazy"
@@ -383,7 +383,7 @@
     <section class="cards" id="cards">
       <h1 class="secondary-heading">Special Table Reservations</h1>
 
-      <p class="normal-font">
+      <p class="normal-font card-text">
         Indulge in our premium 5-star table reservation service....
       </p>
 
@@ -1395,20 +1395,28 @@
          Partner With <span>SavoryNest </span> <br> <span>Elevate Your Brand </span> Through Exceptional Dining.
         </h2>
 
-        <form action="#">
+        <form class="member-form">
           <input
             type="email"
             class="member-email"
             placeholder="name@gmail.com"
+            autocomplete="off"
             name="email"
             id="email"
             required
           />
 
-          <button class="member-btn">&rarr;</button>
+          <button class="member-btn"> <svg class="member-btn">
+             <svg>
+              <use xlink:href="Assets/img/sprite.svg#icon-arrow-right"></use>
+          </svg></button>
+
         </form>
       </div>
     </section>
+    </main>
+
+    
 
     <footer class="footer">
       <div class="footer-container">

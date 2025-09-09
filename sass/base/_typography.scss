@@ -65,4 +65,8 @@ body {
 .normal-font {
   font-size: 1.7rem;
   line-height: 1.7;
+
+    @include screen(tab-port){
+        @include mobile-font;
+      }
 }

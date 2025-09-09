@@ -4,37 +4,38 @@
 }
 
 @mixin sectpad {
-  padding: 4rem 5.5rem;
+  padding-block: 10rem  6rem;
+  padding-inline: 5.5rem;
 
+  // @include screen(tab-port) {
+  //   padding: 4rem 4.5rem;
+  // }
 
-   @include screen(tab-port){
-   padding: 4rem 4.5rem;
-   }
-
-   @include screen(mobile-port){
-   padding: 4rem 2rem;
-   }
-
-
-
+  // @include screen(mobile-port) {
+  //   padding: 4rem 2rem;
+  // }
 }
 
 @mixin min-sectpad {
   padding: 4.7rem 4rem;
 
+  @include screen(X-lg) {
+    padding-inline: 2rem;
+  }
 
-   @include screen(X-lg){
-  padding-inline: 2rem;
-   } 
+  @include screen(mobile-port) {
+    padding-inline: 1.3rem;
+  }
+}
 
-   @include screen(mobile-port){
-  padding-inline: 1.3rem;
-   }
 
+
+@mixin mobile-font{
+  font-size: 2rem;
 }
 
 ////   BREAKPOINTS
-//-sm-mobbile : 412px
+//-sm-mobbile : 350px
 // - mobile-port : 440px
 // - mobile-land : 915px
 //  -tab-port : 820px
@@ -45,21 +46,17 @@
 //  - XX-lg-port : 1090px
 
 @mixin screen($breakpoint) {
-
-
   @if $breakpoint == sm-mobile {
-    @media (max-width: 25.75em) {
-      @content; 
+    @media (max-width: 20.63em) {
+      @content;
     }
   }
-
 
   @if $breakpoint == mobile-port {
     @media (max-width: 38.13em) {
       @content;
     }
   }
-
 
   @if $breakpoint == mobile-land {
     @media (max-width: 57.19em) and (orientation: landscape) {
@@ -79,20 +76,17 @@
     }
   }
 
-
   @if $breakpoint == lg {
     @media (max-width: 80em) {
       @content;
     }
   }
 
-
   @if $breakpoint == X-lg {
     @media (min-width: 90em) {
       @content;
     }
   }
-
 
   @if $breakpoint == XX-lg {
     @media (min-width: 120em) {
@@ -101,9 +95,8 @@
   }
 
   @if $breakpoint == XX-lg-port {
-    @media (max-width: 68.13em) and (orientation: portrait){
+    @media (max-width: 68.13em) and (orientation: portrait) {
       @content;
     }
   }
-
 }

@@ -4,13 +4,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 6;
+  margin-bottom: 50rem;
 
-  &.fixed {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 6;
-    transition: .5s ease-out;
+  &.shadow {
+    box-shadow: 0 0.5rem 2rem $color-shadow;
+    transition: box-shadow 0.5s ease-out;
   }
 
   &-logo {
@@ -51,6 +53,10 @@
       z-index: 3;
       transition: 0.4s ease-out;
 
+      @include screen(sm-mobile) {
+        height: 100%;
+      }
+
       &.show {
         left: 0;
       }
@@ -65,7 +71,7 @@
 
     @include screen(mobile-port) {
       flex-direction: column;
-      row-gap: 8rem;
+      row-gap: 5rem;
       margin-top: 10rem;
     }
   }
@@ -134,13 +140,11 @@
     }
   }
 
-&-back-btn{
-  width: 2rem;
-  height: 2rem;
-  margin-right: 1rem;
-  fill: $color-heading;
-  transform: rotate(180deg);
-
-}
-
+  &-back-btn {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+    fill: $color-heading;
+    transform: rotate(180deg);
+  }
 }

@@ -10,13 +10,15 @@ console.log(NavCont, Navbar, NavOverlay, NavToggle, NavClose, Navlinks);
 
 /////  NAVBAR CONTAINER FUNCTION
 
-function NavFixed() {}
+function navShadow() {
 
-window.offsetHeight >= 50
-  ? NavCont.classList.add("fixed")
-  : NavCont.classList.remove("fixed");
+  window.scrollY >= 50
+    ? NavCont.classList.add("shadow")
+    : NavCont.classList.remove("shadow");
 
-window.addEventListener("scroll", NavFixed);
+}
+
+window.addEventListener("scroll", navShadow);
 
 /// NAV-TOGGLE FUNCTION
 NavToggle.addEventListener("click", () => {
