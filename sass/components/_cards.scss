@@ -8,15 +8,19 @@
 
   & p {
     text-align: center;
-      @include screen(mobile-port){
-        @include mobile-font;
-      }
+    @include screen(mobile-port) {
+      @include mobile-font;
+    }
   }
 
   &-container {
     max-width: 120rem;
-    width: 100%;
+    //width: 100%;
     position: relative;
+
+    @include screen(mobile-port) {
+      width: 100%;
+    }
 
     &-list {
       display: grid;
@@ -34,7 +38,7 @@
       }
 
       @include screen(mobile-port) {
-       grrid-auto-columns: calc((100% / 1.5) - 1.2rem)
+        grid-auto-columns: calc((100% / 1) - 1.2rem);
       }
     }
 
@@ -44,10 +48,9 @@
       padding: 2rem 1rem;
       scroll-snap-align: start;
 
-      @include screen (tab-port){
-        padding-inline: .5rem;
+      @include screen(tab-port) {
+        padding-inline: 0.5rem;
       }
-
     }
 
     &-content {
@@ -63,7 +66,7 @@
       border: 2px solid transparent;
       transition: border 0.4s;
 
-      @include screen(tab-port){
+      @include screen(tab-port) {
         padding-inline: 0;
         height: 36rem;
       }
@@ -82,6 +85,7 @@
     }
   }
 
+
   &-title {
     display: flex;
     flex-direction: column;
@@ -89,15 +93,18 @@
     margin-block: 0.5rem;
     color: $color-black;
 
+
     &-text {
       font-size: 1.7rem;
       font-weight: 700;
     }
 
+
     &-description {
       font-size: 1.5rem;
       font-weight: 400;
     }
+
 
     &-price {
       font-size: 1.3rem;
@@ -105,6 +112,7 @@
     }
   }
 
+  
   &-rating {
     display: flex;
     justify-content: center;

@@ -6,11 +6,9 @@
     text-align: center;
     margin: 0 auto;
 
-      @include screen(mobile-port){
-        @include mobile-font;
-      }
-
-
+    @include screen(mobile-port) {
+      @include mobile-font;
+    }
   }
 
   &-content {
@@ -31,15 +29,49 @@
     }
 
     &::after {
-      left: -4.1rem;
+      left: -5%;
       top: 0;
       background: linear-gradient(to right, $color-primary 40%, transparent);
+
+      @include screen(lg) {
+        left: -6%;
+      }
+
+      @include screen(tab-port) {
+        left: -10%;
+      }
+
+      @include screen(mobile-port) {
+        left: -11%;
+      }
+
+      @include screen(sm-mobile) {
+        left: -14%;
+      }
     }
 
     &::before {
-      right: -4.1rem;
+      right: -4%;
       z-index: 2;
       background: linear-gradient(to left, $color-primary 40%, transparent);
+
+      @include screen(lg) {
+        right: -6%;
+      }
+
+      @include screen(tab-port) {
+        right: -10%;
+      }
+
+      @include screen(mobile-port) {
+        right: -11%;
+        background: purple;
+      }
+
+      @include screen(sm-mobile) {
+        right: -17%;
+        background: red;
+      }
     }
   }
 

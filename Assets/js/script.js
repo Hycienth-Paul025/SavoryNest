@@ -1,4 +1,8 @@
+'use strict';
+
+
 ///// NAVBAR MOBILE FUNCTION
+
 const NavCont = document.querySelector(".navbar");
 const Navbar = document.querySelector(".navbar nav");
 const NavOverlay = document.querySelector(".navbar-overlay");
@@ -6,16 +10,12 @@ const NavToggle = document.querySelector(".navbar-hamburger");
 const NavClose = document.querySelector(".navbar-close");
 const Navlinks = document.querySelectorAll(".navbar-link");
 
-console.log(NavCont, Navbar, NavOverlay, NavToggle, NavClose, Navlinks);
-
 /////  NAVBAR CONTAINER FUNCTION
 
 function navShadow() {
-
   window.scrollY >= 50
     ? NavCont.classList.add("shadow")
     : NavCont.classList.remove("shadow");
-
 }
 
 window.addEventListener("scroll", navShadow);
@@ -47,6 +47,32 @@ Navlinks.forEach((links) =>
     NavOverlay.classList.remove("visible");
   })
 );
+
+
+
+
+
+/// DARK AND LIGHT THEME MODE
+
+
+
+
+// const themeToggle = document.querySelectorAll(".navbar-theme-icon");
+
+// const darktheme = document.querySelector(".moon");
+// const lighttheme = document.querySelector(".sun");
+
+// console.log(themeToggle, darktheme, lighttheme);
+
+
+// themeToggle.addEventListener("click", themeEffect)
+
+
+
+
+
+
+
 
 /// MENU FILTERATION BUTTON FUNCTION
 

@@ -1,7 +1,132 @@
+////  DARK MODE
+
+.dark {
+  body {
+    background: $color-nav;
+    color: $color-white;
+  }
+
+  //// Hero Section
+
+  .hero h1,
+  .hero span {
+    color: #d4552a;
+  }
+
+  .hero-description {
+    color: $color-white;
+  }
+
+  /// CARD SECTION
+
+  .card-title,
+  .card-description {
+    color: $color-black;
+  }
+
+  /// CHEF SECTION
+
+  .about-chef .chef-title,
+  .about-chef .chef-role {
+    color: #3291df;
+  }
+
+  //// MENU SECTION
+
+  .menu-image {
+    background: linear-gradient(120deg, #ffffffd7 70%, #fcaf7ce6 30%);
+  }
+
+  .menu-image-title-description {
+    color: $color-black;
+  }
+
+  //// SPONSORS SECTION
+
+  .sponsors-content::after {
+    background: linear-gradient(to right, $color-nav 40%, transparent);
+  }
+
+  .sponsors-content::before {
+    background: linear-gradient(to left, $color-nav 40%, transparent);
+    right: -11%;
+  }
+
+  ////  TESTIMONBIALS
+
+  .testimonials-card {
+    background: #ffffff42;
+  }
+
+  /// CONTACT
+
+  .contact-content {
+    color: $color-black;
+  }
+}
+
 
 @media (prefers-color-scheme: dark) {
-  // body {
-  //   background: $color-nav;
-  //   color: $color-white;
-  // }
+  body {
+    background: rgba($color-nav, 0.94);
+    color: $color-white;
+  }
+
+  //// Hero Section
+
+  .hero h1,
+  .hero span {
+    color: #d4552a;
+  }
+
+  .hero-description {
+    color: $color-white;
+  }
+
+  /// CARD SECTION
+
+  .card-title,
+  .card-description {
+    color: $color-black;
+  }
+
+  /// CHEF SECTION
+
+  .about-chef .chef-title,
+  .about-chef .chef-role {
+    color: #3291df;
+  }
+
+  //// MENU SECTION
+
+  .menu-image {
+    background: linear-gradient(120deg, #ffffffd7 70%, #fcaf7ce6 30%);
+  }
+
+  .menu-image-title-description {
+    color: $color-black;
+  }
+
+  //// SPONSORS SECTION
+
+  .sponsors-content::after {
+    background: linear-gradient(to right, $color-nav 40%, transparent);
+  }
+
+  .sponsors-content::before {
+    background: linear-gradient(to left, $color-nav 40%, transparent);
+    right: -11%;
+  }
+
+  ////  TESTIMONBIALS
+
+  .testimonials-card {
+    background: #ffffff42;
+  }
+
+  /// CONTACT
+
+  .contact-content {
+    color: $color-black;
+  }
 }

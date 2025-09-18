@@ -31,7 +31,7 @@
 
 
 @mixin mobile-font{
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 ////   BREAKPOINTS
@@ -43,7 +43,7 @@
 //  - lg : 1280px
 //  - X-lg : 1440px
 //  - XX-lg : 1920px
-//  - XX-lg-port : 1090px
+//  - XX-lg-port : 1100px
 
 @mixin screen($breakpoint) {
   @if $breakpoint == sm-mobile {
@@ -82,11 +82,21 @@
     }
   }
 
+  
+
   @if $breakpoint == X-lg {
     @media (min-width: 90em) {
       @content;
     }
   }
+
+  
+  @if $breakpoint == XX-lg-port {
+    @media (max-width: 68.75em) {
+      @content;
+    }
+  }
+
 
   @if $breakpoint == XX-lg {
     @media (min-width: 120em) {
@@ -94,9 +104,4 @@
     }
   }
 
-  @if $breakpoint == XX-lg-port {
-    @media (max-width: 68.13em) and (orientation: portrait) {
-      @content;
-    }
-  }
 }

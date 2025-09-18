@@ -2,15 +2,18 @@
   @include sectpad;
   display: block;
 
+  @include screen(tab-port) {
+    padding: 0;
+  }
+
   &-description {
     font-size: 1.5rem;
     text-align: center;
     font-weight: 400;
 
-      @include screen(mobile-port){
-        @include mobile-font;
-      }
-      
+    @include screen(mobile-port) {
+      @include mobile-font;
+    }
   }
 
   &-container {
@@ -18,25 +21,31 @@
     justify-content: space-around;
     align-items: center;
     margin-top: 6rem;
-    background: linear-gradient(105deg, rgba(255, 255, 255, 0.842) 60%, rgba(255, 255, 255, 0.842) 50%, transparent 50%), no-repeat center url(../.././Assets/img/bg-contact.jpg);
+    background: linear-gradient(
+        105deg,
+        rgba(255, 255, 255, 0.842) 60%,
+        rgba(255, 255, 255, 0.842) 50%,
+        transparent 50%
+      ),
+      no-repeat center url(../.././Assets/img/bg-contact.jpg);
     width: 100%;
-height: 50rem;
+    height: 50rem;
 
-
-
-   @include screen(tab-port){
-  flex-direction: column;
-  height: auto;
-   }
-
-  
-
+    @include screen(tab-port) {
+      flex-direction: column;
+      height: auto;
+      width: 100%;
+    }
   }
 
   &-content {
     margin-block: 2rem;
     display: flex;
     align-items: center;
+
+    @include screen(mobile-port) {
+      @include mobile-font;
+    }
 
     img {
       width: 3rem;
@@ -62,13 +71,11 @@ height: 50rem;
         padding-inline: 1rem;
         outline: none;
         border: none;
-        width: 50rem; 
+        width: 50rem;
         height: 4rem;
         border-radius: 0.3rem;
-        resize: none; 
+        resize: none;
         font-family: inherit;
-
-       
       }
 
       textarea {

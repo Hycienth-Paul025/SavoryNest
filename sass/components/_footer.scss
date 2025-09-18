@@ -55,8 +55,11 @@
     width: 100%;
 
     @include screen(XX-lg-port) {
-      justify-content: flex-start;
-      column-gap: 2.5rem;
+     display: grid;
+     grid-row-gap: 3rem ;
+     height: 100%;
+     grid-template-columns: repeat(auto-fit, minmax(20rem , 1fr));
+
     }
 
     h2 {
