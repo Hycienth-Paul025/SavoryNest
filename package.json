@@ -1,6 +1,6 @@
 {
   "name": "savorynest",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "description": "SavoryNest project",
   "main": "postcss.config.js",
   "scripts": {
