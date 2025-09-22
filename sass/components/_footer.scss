@@ -1,0 +1,120 @@
+.footer {
+  @include min-sectpad;
+  background: $color-nav;
+
+  &-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include screen(XX-lg-port) {
+      display: block;
+    }
+  }
+
+  ///// FOOTER LEFT
+
+  &-left {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3.4rem;
+
+    @include screen(XX-lg-port) {
+      margin-bottom: 3rem;
+    }
+
+    &-text {
+      color: $color-white;
+
+      @include screen(mobile-port) {
+        @include mobile-font;
+      }
+    }
+  }
+
+  &-link {
+    width: 3.5rem;
+    height: 3.5rem;
+    fill: $color-white;
+    margin-inline: 1rem;
+    padding: 0.5rem;
+    transition: background-color 0.4s ease;
+
+    &:hover {
+      background-color: $color-heading;
+      border-radius: 0.5rem;
+    }
+  }
+
+  /// FOOTER RIGHT
+
+  &-right {
+    display: flex;
+    justify-content: space-around;
+    height: 20rem;
+    width: 100%;
+
+    @include screen(XX-lg-port) {
+     display: grid;
+     grid-row-gap: 3rem ;
+     height: 100%;
+     grid-template-columns: repeat(auto-fit, minmax(20rem , 1fr));
+
+    }
+
+    h2 {
+      color: $color-heading;
+      font-size: 2rem;
+      font-weight: 600;
+      letter-spacing: 0.2rem;
+      margin-bottom: 2rem;
+    }
+  }
+
+  &-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+
+    li {
+      font-size: 1.6rem;
+      color: $color-white;
+      cursor: pointer;
+      transition: color 0.4s;
+
+      &:hover {
+        color: $color-heading;
+      }
+    }
+  }
+
+  //// FOOTER BENEDICTION
+
+  &-benediction {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5rem;
+
+    @include screen(tab-port) {
+      flex-direction: column-reverse;
+      row-gap: 3rem;
+    }
+  }
+
+  &-pay {
+    display: flex;
+    column-gap: 2.5rem;
+    margin-right: 2.5rem;
+
+    @include screen(mobile-port) {
+      margin: 0;
+    }
+
+    img {
+      width: 5rem;
+      height: 3.6rem;
+      border-radius: 0.5rem;
+    }
+  }
+}

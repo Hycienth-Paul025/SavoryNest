@@ -1,0 +1,168 @@
+.hero {
+  flex-basis: 50%;
+
+  & h1,
+  span {
+    color: #943618;
+  }
+
+  & span {
+    font-size: 4rem;
+    font-weight: 400;
+    text-transform: none;
+  }
+
+  &-description {
+    width: 100%;
+   padding-block: 1.5rem 3.5rem;
+    color: $color-black;
+
+    @include screen(mobile-port){
+      font-size: 1.8rem;
+    }
+  }
+
+  &-btn {
+    display: flex;
+    column-gap: 1rem;
+    font-size: 1.4rem;
+    
+
+    a {
+      background: #943618;
+    }
+  }
+
+  &-active {
+    display: flex;
+    column-gap: 0.6rem;
+    align-content: center;
+  }
+
+  &-icon {
+    width: 1.5rem;
+    height: 1.2rem;
+    fill: $color-white;
+    align-self: center;
+  }
+
+  /// HERO IMAGE
+
+  &-image {
+    width: 100%;
+    flex-basis: 50%;
+    position: relative;
+    
+   
+  @include screen(tab-port){
+    padding-top: 10rem;
+  }
+
+
+
+
+    & .dish-1,
+    .dish-2 {
+      position: absolute;
+      filter: drop-shadow(0 2px 0.5rem $color-shadow);
+    }
+
+    & .dish-1 {
+      width: 7rem;
+      height: 7rem;
+      top: 0;
+      left: 8rem;
+      animation: display-in 1.4s ease-out;
+      animation-fill-mode: backwards;
+
+      @include screen(XX-lg) {
+      width: 10rem;
+      height: 10rem;
+        top: 3rem;
+      }
+
+      @include screen(X-lg) {
+        width: 8rem;
+        height: 8rem;
+       left: 0rem;
+      }
+
+      @include screen (tab-port){
+        width: 12rem;
+        height: 12rem;
+        top: 5rem;
+      }
+
+      @include screen(mobile-port){
+        display: none;
+      }
+
+  
+    }
+
+    & .dish-2 {
+      height: 7rem;
+      right: 4rem;
+      bottom: 2rem;
+      animation: display-late 3s ease-out;
+      animation-fill-mode: backwards;
+
+      @include screen(XX-lg) {
+        height: 10rem;
+      }
+
+      @include screen(X-lg) {
+        height: 8rem;
+        right: 1rem;
+        bottom: 1rem;
+      }
+
+      @include screen(tab-port){
+        height: 12rem;
+       
+      }
+
+@include screen (mobile-port){
+  display: none;
+}
+
+
+    }
+
+    & .slide-in {
+      width: 100%;
+      
+      filter: drop-shadow(0 0.5rem 1rem $color-shadow);
+      animation: slide-in 2s cubic-bezier(0.61, 1, 0.88, 1);
+      animation-fill-mode: backwards;
+    }
+  }
+}
+
+@keyframes display-in {
+  from {
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0.6);
+  }
+}
+
+@keyframes display-late {
+  from {
+    opacity: 0;
+    transform: scale(0.6);
+  }
+}
+
+@keyframes slide-in {
+  0%,
+  50% {
+    transform: translateX(30rem) rotate(60deg);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+}

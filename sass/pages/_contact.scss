@@ -1,0 +1,109 @@
+.contact {
+  @include sectpad;
+  display: block;
+
+  @include screen(tab-port) {
+    padding: 0;
+  }
+
+  &-description {
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 400;
+
+    @include screen(mobile-port) {
+      @include mobile-font;
+    }
+  }
+
+  &-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 6rem;
+    background: linear-gradient(
+        105deg,
+        rgba($color-white, 0.842) 60%,
+        rgba($color-white, 0.842) 50%,
+        transparent 50%
+      ),
+      no-repeat center url(../.././Assets/img/bg-contact.jpg);
+    width: 100%;
+    height: 50rem;
+
+    @include screen(XX-lg-port) {
+      flex-direction: column;
+      height: auto;
+      width: 100%;
+    }
+
+    @include screen(mobile-port) {
+      background: linear-gradient(
+          105deg,
+          rgba(255, 255, 255, 0.842) 75%,
+          rgba(255, 255, 255, 0.842) 50%,
+          transparent 50%
+        ),
+        no-repeat center url(../.././Assets/img/bg-contact.jpg);
+    }
+  }
+
+  &-content {
+    margin-block: 2rem;
+    display: flex;
+    align-items: center;
+
+    @include screen(mobile-port) {
+      @include mobile-font;
+      font-weight: 500;
+    }
+
+    img {
+      width: 3rem;
+      height: 3rem;
+      margin-right: 1rem;
+    }
+
+    strong {
+      font-weight: 800;
+      margin-right: 1.5rem;
+    }
+  }
+
+  &-form {
+    padding: 3rem;
+    border-radius: 0.5rem;
+
+    @include screen(mobile-port) {
+      width: 100%;
+      padding: 3rem 2rem;
+    }
+
+    &-input {
+      padding-block: 1rem;
+
+      input,
+      textarea {
+        font-size: 1.6rem;
+        padding-inline: 1rem;
+        outline: none;
+        border: none;
+        width: 50rem;
+        height: 4rem;
+        border-radius: 0.3rem;
+        resize: none;
+        font-family: inherit;
+
+        @include screen(mobile-port) {
+          @include mobile-font;
+          width: 100%;
+        }
+      }
+
+      textarea {
+        padding-block: 1rem;
+        height: 15rem;
+      }
+    }
+  }
+}

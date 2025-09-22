@@ -1,0 +1,75 @@
+.member {
+  @include min-sectpad;
+
+  &-content {
+    background: linear-gradient(
+        to bottom left,
+        rgba($color-black, 0.9) 70%,
+        transparent 120%
+      ),
+      center no-repeat url(../../Assets/img/member-bg.jpg);
+    background-size: cover;
+    height: 50rem;
+    text-align: center;
+  }
+
+  &-heading {
+    padding-top: 10rem;
+    font-size: 4rem;
+    color: $color-white;
+    margin-bottom: 2rem;
+
+    &:first-child {
+      @include screen(mobile-port) {
+        display: none;
+      }
+    }
+    &:nth-child(2) {
+      padding-top: 0;
+
+      @include screen(mobile-port) {
+        padding-top: 15rem;
+      }
+    }
+
+    & span {
+      font-size: 4.5rem;
+      line-height: 5.5rem;
+      text-transform: capitalize;
+      color: $color-heading;
+    }
+  }
+
+  &-form {
+    display: flex;
+    column-gap: 2rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &-email {
+    border: none;
+    padding: 1rem;
+    width: 30%;
+    height: 3.5rem;
+    font-size: 1.5rem;
+    
+  }
+
+  &-btn {
+    width: 5rem;
+    background: $color-heading;
+    fill: $color-white;
+    border: none;
+    height: 3.5rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: filter 0.3s ease;
+
+    &:hover {
+      filter: brightness(110%);
+    }
+  }
+
+
+}
