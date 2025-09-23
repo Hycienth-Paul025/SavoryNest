@@ -28,7 +28,7 @@
       top: 20%;
       right: 6rem;
     }
-  }
+  } 
 
   &-container {
     width: 60%;
@@ -41,12 +41,12 @@
         rgba($color-black, 0.9)
       ),
       no-repeat center url(../../Assets/img/membership.jpeg);
-    overflow: hidden;
     padding: 2rem;
     border: 2px solid $color-primary;
 
     @include screen(mobile-port) {
       height: 50%;
+      width: 98%;
     }
   }
 

@@ -50,21 +50,32 @@
       top: 0;
       left: -100%;
       width: 100%;
-      height: 60%;
+      height: 55%;
       padding: 2.5rem;
       background: $color-nav;
       box-shadow: 0 2rem 3rem $color-shadow;
       z-index: 3;
       transition: 0.2s ease;
 
-      @include screen(sm-mobile) {
-        height: 100%;
-      }
+    
 
       &.show {
         left: 0;
       }
+
     }
+
+
+@include screen (mobile-land){
+  height: 100%;
+}
+
+
+
+      @include screen(sm-mobile) {
+        height: 100%;
+
+      }
   }
 
   /// navbar item
@@ -75,8 +86,8 @@
 
     @include screen(tab-port) {
       flex-direction: column;
-      row-gap: 5rem;
-      margin-top: 10rem;
+      row-gap: 2.5rem;
+      margin-block: 5rem 3rem;
     }
   }
 
@@ -125,7 +136,7 @@
     }
   }
 
-  /// Overlay
+  /// Navbar Overlay
 
   &-overlay {
     display: none;
