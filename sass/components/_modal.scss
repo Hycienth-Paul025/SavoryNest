@@ -25,8 +25,8 @@
     right: 2rem;
 
     @include screen(mobile-port) {
-      top: 20%;
-      right: 6rem;
+      top: 15%;
+      right: 2rem;
     }
   } 
 
@@ -52,6 +52,10 @@
 
   &-text {
     margin-bottom: 4rem;
+
+    @include screen(mobile-port){
+      margin-block: 2.5rem ;
+    } 
   }
 
   &-benefits {
@@ -61,7 +65,8 @@
     margin-bottom: 4rem;
 
     @include screen(mobile-port) {
-      margin-top: 10rem;
+      margin-bottom: 0;
+
     }
   }
 
@@ -70,7 +75,7 @@
     column-gap: 1.5rem;
 
     @include screen(mobile-port) {
-      margin-top: 10rem;
+      margin-top: 5rem;
       flex-direction: column;
       row-gap: 1.5rem;
     }

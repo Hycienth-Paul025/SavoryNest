@@ -1,6 +1,7 @@
 module.exports = {
   plugins: [
-    require("autoprefixer")({
+    require("autoprefixer"),
+    require('cssnano')({
       overrideBrowserslist: [
         "> 0.5%",
         "last 2 versions",

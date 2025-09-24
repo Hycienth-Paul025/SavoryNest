@@ -824,8 +824,8 @@ body {
 }
 @media (max-width: 38.13em) {
   .modal-close {
-    top: 20%;
-    right: 6rem;
+    top: 15%;
+    right: 2rem;
   }
 }
 .modal-container {
@@ -846,6 +846,11 @@ body {
 .modal-text {
   margin-bottom: 4rem;
 }
+@media (max-width: 38.13em) {
+  .modal-text {
+    margin-block: 2.5rem;
+  }
+}
 .modal-benefits {
   display: flex;
   flex-direction: column;
@@ -854,7 +859,7 @@ body {
 }
 @media (max-width: 38.13em) {
   .modal-benefits {
-    margin-top: 10rem;
+    margin-bottom: 0;
   }
 }
 .modal-actions {
@@ -863,7 +868,7 @@ body {
 }
 @media (max-width: 38.13em) {
   .modal-actions {
-    margin-top: 10rem;
+    margin-top: 5rem;
     flex-direction: column;
     row-gap: 1.5rem;
   }
