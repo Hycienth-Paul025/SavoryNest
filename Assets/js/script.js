@@ -252,21 +252,21 @@ document.addEventListener("DOMContentLoaded", () => {
     distance: "60px",
     duration: "2500",
     delay: 300,
-    reset: true,
+   // reset: true,
   });
 
   /// About scroll Reveal
 
   sr.reveal(".about-details-card, .menu-image, .testimonials-card", {
     interval: 100,
-  });
+  }); 
 
   sr.reveal(".about-chef-description", { origin: "right" });
 
   sr.reveal(".about-chef-description", { origin: "right" });
 
   /// Chef
-  sr.reveal(".chef", { origin: "left" });
+  sr.reveal(".chef, .hero", { origin: "left" });
 
   /// Sponsor
 

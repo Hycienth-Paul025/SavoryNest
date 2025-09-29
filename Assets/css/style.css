@@ -9,8 +9,8 @@
 }
 
 *::selection {
-  background: #ffd689;
-  color: #71717a;
+  background: #feccaa;
+  color: #000;
 }
 
 html {
@@ -1283,6 +1283,11 @@ body {
 .faq-text {
   text-align: center;
 }
+@media (max-width: 38.13em) {
+  .faq-text {
+    display: none;
+  }
+}
 .faq-accordion {
   margin-top: 4rem;
 }
@@ -1307,7 +1312,7 @@ body {
   margin-bottom: 1.3rem;
 }
 .faq-question p {
-  font-weight: 500;
+  font-weight: 700;
 }
 .faq-icon {
   width: 1.5rem;
@@ -1325,6 +1330,11 @@ body {
   transition: 0.4s;
   will-change: height, opacity, visibility;
 }
+@media (max-width: 38.13em) {
+  .faq-answer {
+    font-size: 1.8rem;
+  }
+}
 .faq .faq-question[aria-expanded=true] .faq-question {
   background: #fffbeb;
   padding: 2rem;
@@ -1336,7 +1346,12 @@ body {
   visibility: visible;
   opacity: 1;
   height: 4rem;
-  padding-bottom: 5rem;
+  margin-bottom: 2rem;
+}
+@media (max-width: 38.13em) {
+  .faq .faq-question[aria-expanded=true] ~ .faq-answer {
+    margin-bottom: 5rem;
+  }
 }
 
 .testimonials {
@@ -1556,12 +1571,26 @@ body {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 38.13em) {
+  .member-form {
+    padding-inline: 1rem;
+    margin-bottom: 4rem;
+  }
+}
 .member-email {
   border: none;
+  outline: none;
   padding: 1rem;
-  width: 30%;
+  width: 50%;
   height: 3.5rem;
   font-size: 1.5rem;
+  border-radius: 0.5rem;
+}
+@media (max-width: 38.13em) {
+  .member-email {
+    width: 100%;
+    height: 5rem;
+  }
 }
 .member-btn {
   width: 5rem;
@@ -1575,6 +1604,11 @@ body {
 }
 .member-btn:hover {
   filter: brightness(110%);
+}
+@media (max-width: 38.13em) {
+  .member-btn {
+    height: 5rem;
+  }
 }
 
 body.dark-theme {
