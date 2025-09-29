@@ -1540,6 +1540,11 @@ body {
   height: 50rem;
   text-align: center;
 }
+@media (max-width: 38.13em) {
+  .member-content {
+    height: 70rem;
+  }
+}
 .member-heading {
   padding-top: 10rem;
   font-size: 4rem;
