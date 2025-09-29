@@ -401,9 +401,15 @@ body {
 }
 .hero-icon {
   width: 1.5rem;
-  height: 1.2rem;
+  height: 1.5rem;
   fill: #fff;
   align-self: center;
+}
+@media (max-width: 38.13em) {
+  .hero-icon {
+    width: 2.2rem;
+    height: 2.2rem;
+  }
 }
 .hero-image {
   width: 100%;
