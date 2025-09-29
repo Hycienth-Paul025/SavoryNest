@@ -44,14 +44,29 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   ////// NAVBAR LINKS FUNCTIONS
+
   if (Navlinks.length > 0 && Navbar && NavOverlay) {
     Navlinks.forEach((links) =>
       links.addEventListener("click", () => {
+        
+        removeActive();
+        links.classList.add("active-btn");
+
         Navbar.classList.remove("show");
         NavOverlay.classList.remove("visible");
       })
     );
   }
+
+  function removeActive() {
+    Navlinks.forEach((n) => {
+      n.classList.remove("active-btn");
+    });
+  }
+
+  //// NAVBAR ACTIVE LINK
+
+  // Navlinks.forEach()
 
   /// DARK AND LIGHT THEME MODE
   const body = document.body;
@@ -252,14 +267,14 @@ document.addEventListener("DOMContentLoaded", () => {
     distance: "60px",
     duration: "2500",
     delay: 300,
-   // reset: true,
+    // reset: true,
   });
 
   /// About scroll Reveal
 
   sr.reveal(".about-details-card, .menu-image, .testimonials-card", {
     interval: 100,
-  }); 
+  });
 
   sr.reveal(".about-chef-description", { origin: "right" });
 
@@ -272,8 +287,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   sr.reveal(".sponsors");
 
-/// Cards
+  /// Cards
 
-sr.reveal(".cards-container")
-
+  sr.reveal(".cards-container");
 });
