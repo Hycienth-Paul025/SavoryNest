@@ -1,0 +1,92 @@
+.modal {
+  position: fixed;
+  z-index: 6;
+  width: 100%;
+  height: 100vh;
+  background: rgba($color-black, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  transition: 0.3s;
+
+  &.open {
+    visibility: visible;
+  }
+
+  &-close {
+    width: 5rem;
+    height: 5rem;
+    fill: $color-white;
+    cursor: pointer;
+
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+
+    @include screen(mobile-port) {
+      top: 10%;
+      right: 2rem;
+    }
+  } 
+
+  &-container {
+    width: 60%;
+    height: auto;
+    border-radius: 1rem;
+    color: $color-white;
+    background: linear-gradient(
+        to bottom,
+        rgba($color-black, 0.9),
+        rgba($color-black, 0.9)
+      ),
+      no-repeat center url(../../Assets/img/membership.jpeg);
+    padding: 2rem;
+    border: 2px solid $color-primary;
+
+    @include screen(mobile-port) {
+      height: 60%;
+      width: 98%;
+    }
+  }
+
+  &-text {
+    margin-bottom: 4rem;
+
+    @include screen(mobile-port){
+      margin-block: 2.5rem ;
+    } 
+  }
+
+  &-benefits {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.3rem;
+    margin-bottom: 4rem;
+
+    @include screen(mobile-port) {
+      margin-bottom: 0;
+
+    }
+  }
+
+  &-actions {
+    display: flex;
+    column-gap: 1.5rem;
+
+    @include screen(mobile-port) {
+      margin-top: 5rem ;
+      flex-direction: column;
+      row-gap: 1.5rem;
+    }
+  }
+
+  &-btn {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  &-apology {
+    padding: 20rem 10rem;
+  }
+}

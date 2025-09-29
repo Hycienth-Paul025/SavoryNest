@@ -1,0 +1,169 @@
+.about {
+  @include sectpad;
+  min-height: 100vh;
+  display: flex;
+  overflow: hidden;
+
+  @include screen(mobile-port){
+    padding-inline: 2rem;
+  }
+
+
+
+  &-text {
+    font-size: 1.7rem;
+    line-height: 2.7rem;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+
+    @include screen(tab-port) {
+      font-size: 2rem;
+      width: 100%;
+    }
+  }
+
+  &-details {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    align-items: center;
+    justify-items: center;
+    grid-gap: 2rem;
+    margin: 0 auto;
+    padding-block: 5rem;
+
+      @include screen(mobile-port) {
+        grid-template-columns: repeat(1, 1fr);
+      }
+
+    &-card {
+      height: 100%;
+      padding: 1.5rem;
+      box-shadow: 0 0.2rem 2rem rgba($color-shadow, 0.2);
+      border-radius: 1rem;
+      background: $color-white;
+
+    
+
+      &-image {
+        display: flex;
+        column-gap: 1rem;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 2rem;
+
+        & img {
+          height: 3rem;
+        }
+
+        .card-title {
+          font-size: 2rem;
+          font-weight: 700;
+          text-align: center;
+          //  color: $color-black;
+        }
+      }
+
+      .card-description {
+        text-align: center;
+        font-size: 1.5rem; 
+        line-height: 1.2;
+        font-weight: 500;
+        padding-inline: 0.3rem;
+
+        @include screen(tab-port) {
+          line-height: 1.5;
+        }
+
+          @include screen(mobile-port){
+        @include mobile-font;
+      }
+      }
+    }
+  }
+
+  &-chef {
+    position: relative;
+    padding-block: 2rem 4rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    @include screen( XX-lg-port) {
+      flex-direction: column-reverse;
+      row-gap: 4rem;
+    }
+
+    & .chef {
+      border-radius: 1rem;
+      width: 100%;
+      object-fit: cover;
+      max-width: 50rem;
+      mask-image: linear-gradient(
+        to top,
+        transparent 0%,
+        transparent 4%,
+        $color-white 50%
+      );
+    }
+
+    &-description {
+      flex-basis: 50%;
+    }
+
+    .chef-title {
+      font-size: 4rem;
+      font-weight: 700;
+      color: $color-blue;
+    }
+
+    .chef-role {
+      font-size: 2rem;
+      color: $color-blue;
+      font-weight: 600;
+      font-style: italic;
+    }
+
+    .chef-text {
+      margin-top: 2rem;
+      width: 100%;
+
+      @include screen(mobile-port){
+        @include mobile-font;
+      }
+
+    }
+  }
+
+  /// COLLAGE
+
+  &-collage-container {
+    text-align: center;
+
+
+    p{
+        @include screen(mobile-port){
+        @include mobile-font;
+        
+      }
+    }
+  }
+
+  &-collage-heading {
+    @include screen(mobile-port) {
+      font-size: 4rem;
+    }
+  }
+
+  &-collage-img {
+    width: 65%;
+    //  height: 100%;
+    margin-top: 2rem;
+
+      @include screen(tab-port){
+       width: 100%;
+      }
+  }
+}

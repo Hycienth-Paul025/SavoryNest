@@ -1,0 +1,58 @@
+{
+  
+  "name": "savorynest",
+  
+  "version": "2.1.2",
+  
+  "description": "SavoryNest project",
+  
+  "main": "postcss.config.js",
+  
+  "scripts": {
+  
+    
+  "compile:sass": "sass sass/main.scss Assets/css/style.css",
+  
+    
+  "watch:sass": "sass sass/main.scss Assets/css/style.css -w",
+  
+    
+  "prefix:css": "postcss Assets/css/style.css -o Assets/css/style.prefixed.css",
+  
+    
+  "watch:prefix": "postcss Assets/css/style.css --use autoprefixer -o Assets/css/style.prefixed.css -w",
+  
+    
+  "compress:css": "postcss Assets/css/style.prefixed.css -o Assets/css/style.min.css",
+  
+    
+  "build:css": "npm-run-all --parallel watch:sass watch:prefix compress:css"
+  
+  },
+  
+  "author": "Hycienth Paul",
+  
+  "license": "ISC",
+  
+  "devDependencies": {
+  
+    
+  "autoprefixer": "^10.4.21",
+  
+    
+  "cssnano": "^7.1.1",
+  
+    
+  "npm-run-all": "^4.1.5",
+  
+    
+  "postcss": "^8.5.6",
+  
+    
+  "postcss-cli": "^11.0.1",
+  
+    
+  "sass": "^1.90.0"
+  
+  }
+}

@@ -1,0 +1,102 @@
+//// THEMES
+
+//// LIGHT MODE
+// Default styles (what you currently have) are considered the "light mode"
+// You would put your light theme-specific variables and styles here if you were to toggle them, but for this case, we'll assume the default styles are for the light theme.
+
+//// DARK MODE
+
+body.dark-theme {
+  // Body and general text colors for dark mode
+  background: rgba($color-nav, 0.94);
+  color: $color-white;
+  transition: .3s;
+
+  // Hero Section
+  .hero {
+    h1,
+    span {
+      color: #d4552a; // A color that stands out against the dark background
+    }
+
+    &-description {
+      color: $color-white;
+    }
+  }
+
+/// ABout Section
+
+.about-details-card{
+  background: rgba($color-white, 0.1)
+}
+
+
+  // Card Section
+  .card {
+    background: #333; // A dark background for the card
+    &-title,
+    &-description {
+      color: $color-white; // Light text for the dark card
+    }
+  }
+
+  // Chef Section
+  .about-chef {
+    .chef-title,
+    .chef-role {
+      color: #3291df; // A bright blue for the chef's info
+    }
+  }
+
+  // Menu Section
+  .menu {
+    &-image {
+      background: linear-gradient(120deg, #5f5f5fd2 70%, #fcaf7ce6 30%); // A darker gradient for the menu image
+    }
+
+    &-image-title-description {
+      color: $color-white; // Light text for the dark menu background
+  
+  
+      &::first-line {
+          color: $color-white;
+        }
+  
+    }
+
+
+
+  }
+ 
+  // Sponsors Section
+  .sponsors-content {
+    &::after {
+      background: linear-gradient(to right, #2c3643 40%, transparent);
+    }
+
+    &::before {
+      background: linear-gradient(to left, #2c3643 40%, transparent);
+    }
+  }
+
+  // Testimonials Section
+  .testimonials-card {
+    background: #ffffff42; // A semi-transparent white for a subtle effect
+    color: $color-white;
+  }
+
+  // Contact Section
+  .contact-content {
+   color: $color-black;
+  
+  }
+
+  // Navbar icons
+  .navbar-theme-icon.moon {
+    display: none;
+  }
+
+  .navbar-theme-icon.sun {
+    display: block;
+  }
+}

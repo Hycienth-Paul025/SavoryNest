@@ -1,0 +1,1596 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SavoryNest &ndash; Restaurant</title>
+    <!-- css -->
+    <link rel="stylesheet" href="Assets/css/style.css" />
+
+    <link
+      rel="shortcut icon"
+      href="Assets/img/favicon.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <!-- NAVBAR SECTION -->
+    <header class="navbar">
+      <div class="navbar-logo">
+        <h1 class="navbar-logo-text">SavoryNest</h1>
+        <svg class="navbar-logo-img">
+          <use xlink:href="Assets/img/sprite.svg#icon-food"></use>
+        </svg>
+      </div>
+
+      <!--   NAVBAR OVERLAY -->
+      <div class="navbar-overlay"></div>
+
+      <nav class="navbar-nav">
+        <svg class="navbar-toggle navbar-close">
+          <use xlink:href="Assets/img/sprite.svg#icon-cross"></use>
+        </svg>
+
+        <ul class="navbar-item">
+          <li class="navbar-list">
+            <a href="#about" class="navbar-link">About</a>
+          </li>
+
+          <li class="navbar-list">
+            <a href="#menu" class="navbar-link">menu</a>
+          </li>
+
+          <li class="navbar-list">
+            <a href="#sponsors" class="navbar-link">Sponsors</a>
+          </li>
+
+          <li class="navbar-list">
+            <a href="#cards" class="navbar-link">Table</a>
+          </li>
+
+          <li class="navbar-list">
+            <a href="#testimonials" class="navbar-link">Testimonials</a>
+          </li>
+
+          <li class="navbar-list">
+            <a href="#faq" class="navbar-link">FAQ</a>
+          </li>
+
+          <li class="navbar-list">
+            <a href="#contact" class="navbar-link active-btn">contact</a>
+          </li>
+        </ul>
+
+        <div class="navbar-theme">
+          <!-- navabr dark-theme mode toggle -->
+          <svg class="navbar-theme-icon moon">
+            <use xlink:href="Assets/img/sprite.svg#icon-moon"></use>
+          </svg>
+
+          <!-- navabr light-theme mode toggle -->
+          <svg class="navbar-theme-icon sun">
+            <use xlink:href="Assets/img/sprite.svg#icon-light-up"></use>
+          </svg>
+        </div>
+        
+      </nav>
+
+      <!-- navbar hamburger -->
+      <svg class="navbar-toggle navbar-hamburger">
+        <use xlink:href="Assets/img/sprite.svg#icon-menu"></use>
+      </svg>
+    </header>
+
+    <!-- MODAL  -->
+
+    <!-- MEMBERSHIP MODAL -->
+    <div class="modal" id="membership-modal">
+      
+      
+
+      <!-- Overlay -->
+      <!-- <div class="modal-overlay" id="modal-overlay"></div> -->
+
+      <!-- Modal Box -->
+      <div class="modal-container">
+        <!-- Close Button -->
+
+        <svg class="modal-close">
+          <use xlink:href="Assets/img/sprite.svg#icon-cross"></use>
+        </svg>
+        <!-- Modal Header -->
+        <h2 class="modal-title secondary-heading">SavoryNest Membership</h2>
+
+        <!-- Modal Description -->
+        <p class="modal-text normal-font">
+          Join today and unlock <strong>up to 50% discounts</strong> on your
+          favorite dishes, plus exclusive dining rewards reserved just for
+          members.
+        </p>
+
+        <!-- Membership Benefits -->
+        <ul class="modal-benefits small-font">
+          <li>✔ Up to 50% off selected meals</li>
+          <li>✔ Exclusive members-only offers</li>
+          <li>✔ Priority reservations & VIP perks</li>
+        </ul>
+
+        <!-- CTA Buttons -->
+        <div class="modal-actions">
+          <a href="membership.html" class="modal-btn" >Join Now</a href="modal.html">
+          <button class="modal-btn " id="modal-cancel">Not Now</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- HEADER  -->
+    <section class="header">
+      <div class="hero">
+        <h1 class="primary-heading">
+          Savor <br />
+          the Moments,
+        </h1>
+        <br />
+        <span> One plate at a time.</span>
+
+        <div class="hero-description normal-font">
+          Savor stories in every bite — handcrafted with love, rooted in local
+          flavor.
+        </div>
+
+        <div class="hero-form"></div>
+
+        <div class="hero-btn">
+          <a href="#cards" class="hero-active cta-btn normal-font"
+            >Reserve a Table
+
+            <svg class="hero-icon">
+              <use xlink:href="Assets/img/sprite.svg#icon-glass"></use>
+            </svg>
+          </a>
+
+          <a href="#menu" class="hero-active cta-btn normal-font"
+            >View Menu
+
+            <svg class="hero-icon">
+              <use xlink:href="Assets/img/sprite.svg#icon-tab"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <img
+          src="Assets/img/dish-1.png"
+          alt="continental dish"
+          loading="lazy"
+          class="dish-1"
+        />
+
+        <img
+          src="Assets/img/dish.webp"
+          alt="continental dish"
+          loading="lazy"
+          class="slide-in"
+        />
+
+        <img
+          src="Assets/img/dish-2.png"
+          alt="continental dish"
+          class="dish-2"
+          loading="lazy"
+        />
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <main>
+      <section class="about" id="about">
+        <div class="about-container">
+          <h1 class="secondary-heading">About SavoryNest</h1>
+          <p class="about-text">
+            At SavoryNest, food is more than a meal — it’s a memory. We blend
+            tradition with modern flavors for a warm, elegant dining experience.
+            Every bite is crafted to make you feel right at home.
+          </p>
+
+          <div class="about-details">
+            <div class="about-details-card">
+              <div class="about-details-card-image">
+                <img
+                  src="Assets/img/delivery.png"
+                  alt="about Image"
+                  loading="lazy"
+                />
+                <p class="card-title">Fast Delivery</p>
+              </div>
+              <p class="card-description">
+                Your favorite dishes delivered in minutes. Fresh, fast, hot, and
+                always on time.
+              </p>
+            </div>
+
+            <div class="about-details-card">
+              <div class="about-details-card-image">
+                <img
+                  src="Assets/img/sale.gif"
+                  alt="about Image"
+                  loading="lazy"
+                />
+                <p class="card-title">Taste Luxury for Less</p>
+              </div>
+              <p class="card-description">
+                “Savor world-class dishes crafted with excellence — all at
+                prices that make luxury dining accessible to everyone.”
+              </p>
+            </div>
+
+            <div class="about-details-card">
+              <div class="about-details-card-image">
+                <img
+                  src="Assets/img/drop.png"
+                  alt="about Image"
+                  loading="lazy"
+                />
+                <p class="card-title">Sparkling Waters</p>
+              </div>
+              <p class="card-description">
+                Elevate your dining with complimentary sparkling waters, adding
+                a refreshing and elegant touch to every meal.
+              </p>
+            </div>
+
+            <div class="about-details-card">
+              <div class="about-details-card-image">
+                <img
+                  src="Assets/img/wifi.gif"
+                  alt="about Image"
+                  loading="lazy"
+                />
+                <p class="card-title">Stay Connected While Dining</p>
+              </div>
+              <p class="card-description">
+                Enjoy complimentary high-speed Wi-Fi at SavoryNest. Stay
+                connected, share moments, or work with ease while you dine.
+              </p>
+            </div>
+          </div>
+
+          <h2 class="secondary-heading">Meet The Chef</h2>
+          <div class="about-chef">
+            <img
+              src="Assets/img/chef.webp"
+              class="chef move-in"
+              alt="chef"
+              loading="lazy"
+            />
+
+            <div class="about-chef-description">
+              <h2 class="chef-title">Chef Wilfred George</h2>
+
+              <span class="chef-role"
+                >Executive Chief & Culinary Visionary</span
+              >
+
+              <p class="small-font chef-text">
+                “Chef Wilfred crafts every dish as a story — blending global
+                expertise with fresh local ingredients to create unforgettable
+                flavors. For him, cooking isn’t just technique, it’s love,
+                memory, and culture served on a plate.”
+              </p>
+            </div>
+          </div>
+
+          <div class="about-collage-container">
+            <h2 class="secondary-heading about-collage-heading">
+              Crafted in the Kitchen, <br />
+              Savored at the Table
+            </h2>
+
+            <p class="normal-font">
+              “Every detail matters — from the first chop to the final bite.”
+            </p>
+
+            <img
+              src="Assets/img/collage.jpeg"
+              class="about-collage-img"
+              alt="kitchen collage "
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- MENU -->
+
+      <section class="menu" id="menu">
+        <h2 class="tertiary-heading">SavoryNest's Menu</h2>
+        <p class="menu-description normal-font">
+          From local favorites to international delights.
+        </p>
+        <div class="menu-container">
+          <!-- MENU 1 -->
+
+          <div class="menu-image" data-name="inter">
+            <img src="Assets/img/inter-1.avif" alt="meal" loading="lazy" />
+
+            <div class="menu-image-title">
+              <p class="menu-image-title-description">
+                Empanadas <br />
+                (Latin American or spanish cusines)
+              </p>
+
+              <div class="menu-image-title-rating">
+                <svg class="menu-icon">
+                  <use xlink:href="Assets/img/sprite.svg#icon-star"></use>
+                </svg>
+                <p>4.5 / 5</p>
+              </div>
+            </div>
+            <img src="Assets/img/love.gif" alt="love" class="love" />
+          </div>
+
+          <!-- MENU 2 -->
+
+          <div class="menu-image" data-name="inter">
+            <img src="Assets/img/inter-2.jpg" alt="meal" loading="lazy" />
+
+            <div class="menu-image-title">
+              <p class="menu-image-title-description">
+                Gourmet Dish <br />
+                ( Intercontinental )
+              </p>
+
+              <div class="menu-image-title-rating">
+                <svg class="menu-icon">
+                  <use xlink:href="Assets/img/sprite.svg#icon-star"></use>
+                </svg>
+                <p>4.8 / 5</p>
+              </div>
+            </div>
+            <img src="Assets/img/love.gif" alt="love" class="love" />
+          </div>
+
+          <!-- MENU 3 -->
+
+          <div class="menu-image" data-name="inter">
+            <img src="Assets/img/inter-3.jpg" alt="meal" loading="lazy" />
+
+            <div class="menu-image-title">
+              <p class="menu-image-title-description">
+                Rotini Pasta with Vegetables <br />
+                ( rotini pasta , kale and zucchini )
+              </p>
+
+              <div class="menu-image-title-rating">
+                <svg class="menu-icon">
+                  <use xlink:href="Assets/img/sprite.svg#icon-star"></use>
+                </svg>
+                <p>4.2 / 5</p>
+              </div>
+            </div>
+            <img src="Assets/img/love.gif" alt="love" class="love" />
+          </div>
+        </div>
+
+        <a href="menu.html" class="cta-btn filter-btn">SHOW MORE</a>
+      </section>
+
+      <!-- SPONSORS -->
+
+      <section class="sponsors" id="sponsors">
+        <h1 class="tertiary-heading">Powered by Industry-Leading Partners</h1>
+
+        <p class="normal-font sponsors-description">
+          We partner with trusted brands that bring quality, innovation, and
+          reliability to every dining experience.
+        </p>
+
+        <div class="sponsors-content">
+          <div class="sponsors-carousel">
+            <img
+              src="Assets/img/sponsors/sponsor-1.svg"
+              class="sponsors-carousel-img"
+              alt="sponsors"
+              loading="lazy"
+            />
+
+            <img
+              src="Assets/img/sponsors/sponsor-2.svg"
+              class="sponsors-carousel-img"
+              alt="sponsors"
+              loading="lazy"
+            />
+
+            <img
+              src="Assets/img/sponsors/sponsor-3.svg"
+              class="sponsors-carousel-img"
+              alt="sponsors"
+              loading="lazy"
+            />
+
+            <img
+              src="Assets/img/sponsors/sponsor-4.svg"
+              class="sponsors-carousel-img"
+              alt="sponsors"
+              loading="lazy"
+            />
+
+            <img
+              src="Assets/img/sponsors/sponsor-5.svg"
+              class="sponsors-carousel-img"
+              alt="sponsors"
+              loading="lazy"
+            />
+
+            <img
+              src="Assets/img/sponsors/sponsor-6.svg"
+              class="sponsors-carousel-img"
+              alt="sponsors"
+              loading="lazy"
+            />
+
+            <img
+              src="Assets/img/sponsors/sponsor-7.svg"
+              class="sponsors-carousel-img"
+              alt="sponsors"
+              loading="lazy"
+            />
+
+            <img
+              src="Assets/img/sponsors/sponsor-8.svg"
+              class="sponsors-carousel-img"
+              alt="sponsors"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!--BOOK TABLE CARDS -->
+      <section class="cards" id="cards">
+        <h1 class="secondary-heading">Special Table Reservations</h1>
+
+        <p class="normal-font card-text">
+          Indulge in our premium 5-star table reservation service....
+        </p>
+
+        <div class="cards-container">
+          <div class="cards-container-list">
+            <!-- CARD 1 -->
+
+            <div class="cards-container-slide">
+              <div class="cards-container-content">
+                <img src="Assets/img/reserved-1.jpg" alt="popular meal" />
+
+                <div class="cards-title">
+                  <h2 class="cards-title-text normal-font">Two-Seater Table</h2>
+                  <p class="cards-title-description small-font">
+                    Perfect for couples
+                  </p>
+                  <p class="cards-title-price">$12</p>
+                </div>
+
+                <div class="cards-rating">
+                  <svg class="cards-rating-icon">
+                    <use xlink:href="Assets/img/sprite.svg#icon-star"></use>
+                  </svg>
+
+                  <svg class="cards-rating-icon">
+                    <use xlink:href="Assets/img/sprite.svg#icon-star"></use>
+                  </svg>
+
+                  <svg class="cards-rating-icon">
+                    <use xlink:href="Assets/img/sprite.svg#icon-star"></use>
+                  </svg>
+
+                  <svg class="cards-rating-icon">
+                    <use xlink:href="Assets/img/sprite.svg#icon-star"></use>
+                  </svg>
+
+                  <svg class="cards-rating-icon">
+                    <use xlink:href="Assets/img/sprite.svg#icon-star"></use>
+                  </svg>
+                </div>
+                <br />
+
+                <br />
+                <a href="#" class="filter-btn cta-btn">Book Now</a>
+              </div>
+            </div>
+
+            <!-- CARD 2 -->
+
+            <div class="cards-container-slide">
+              <div class="cards-container-content">
+                <img src="Assets/img/reserved-2.avif" alt="popular meal" />
+
+                <div class="cards-title">
+                  <h2 class="cards-title-text normal-font">Round Table</h2>
+                  <p class="cards-title-description small-font">
+                    Great for group Conversations
+                  </p>
+                  <p class="cards-title-price">$12.5</p>
+                </div>
+
+                <div class="cards-rating">
+                  <svg class="cards-rating-icon">
+                    <use xlink:href="Assets/img/sprite.svg#icon-star"></use>
+                  </svg>
+
+                  <svg class="cards-rating-icon">
+                    <use xlink:href="Assets/img/sprite.svg#icon-star"></use>
+                  </svg>
+
+                  <svg class="cards-rating-icon">
+                    <use xlink:href="Assets/img/sprite.svg#icon-star"></use>
+                  </svg>
+
+                  <svg class="cards-rating-icon">
+                    <use xlink:href="Assets/img/sprite.svg#icon-star"></use>
+                  </svg>
+
+                  <svg class="cards-rating-icon">
+                    <use xlink:href="Assets/img/sprite.svg#icon-star"></use>
+                  </svg>
+                </div>
+                <br />
+
+                <br />
+                <a href="#" class="filter-btn cta-btn">Book Now</a>
+              </div>
+            </div>
+
+            <!-- CARD 3 -->
+
+            <div class="cards-container-slide">
+              <div class="cards-container-content">
+                <img src="Assets/img/reserved-3.avif" alt="popular meal" />
+
+                <div class="cards-title">
+                  <h2 class="cards-title-text">Booth chair and Table</h2>
+                  <p class="cards-title-description">
+                    Great for Couples Conversations
+                  </p>
+                  <p class="cards-title-price">$10</p>
+                </div>
+
+                <div class="cards-rating">
+                  <svg class="cards-rating-icon">
+                    <use xlink:href="Assets/img/sprite.svg#icon-star"></use>
+                  </svg>
+
+                  <svg class="cards-rating-icon">
+                    <use xlink:href="Assets/img/sprite.svg#icon-star"></use>
+                  </svg>
+
+                  <svg class="cards-rating-icon">
+                    <use xlink:href="Assets/img/sprite.svg#icon-star"></use>
+                  </svg>
+
+                  <svg class="cards-rating-icon">
+                    <use xlink:href="Assets/img/sprite.svg#icon-star"></use>
+                  </svg>
+
+                  <svg class="cards-rating-icon">
+                    <use xlink:href="Assets/img/sprite.svg#icon-star"></use>
+                  </svg>
+                </div>
+                <br />
+
+                <br />
+                <a href="#" class="filter-btn cta-btn">Book Now</a>
+              </div>
+            </div>
+
+            <!-- CARD 4 -->
+
+            <div class="cards-container-slide">
+              <div class="cards-container-content">
+                <img src="Assets/img/reserved-4.avif" alt="popular meal" />
+
+                <div class="cards-title">
+                  <h2 class="cards-title-text">Five-Seater Table</h2>
+                  <p class="cards-title-description">For medium gathering</p>
+                  <p class="cards-title-price">$12.5</p>
+                </div>
+
+                <div class="cards-rating">
+                  <svg class="cards-rating-icon">
+                    <use xlink:href="Assets/img/sprite.svg#icon-star"></use>
+                  </svg>
+
+                  <svg class="cards-rating-icon">
+                    <use xlink:href="Assets/img/sprite.svg#icon-star"></use>
+                  </svg>
+
+                  <svg class="cards-rating-icon">
+                    <use xlink:href="Assets/img/sprite.svg#icon-star"></use>
+                  </svg>
+
+                  <svg class="cards-rating-icon">
+                    <use xlink:href="Assets/img/sprite.svg#icon-star"></use>
+                  </svg>
+
+                  <svg class="cards-rating-icon">
+                    <use xlink:href="Assets/img/sprite.svg#icon-star"></use>
+                  </svg>
+                </div>
+                <br />
+
+                <br />
+                <a href="#" class="filter-btn cta-btn">Book Now</a>
+              </div>
+            </div>
+
+            <!-- CARD 5 -->
+
+            <div class="cards-container-slide">
+              <div class="cards-container-content">
+                <img src="Assets/img/reserved-5.avif" alt="popular meal" />
+
+                <div class="cards-title">
+                  <h2 class="cards-title-text">Six-Seater Table</h2>
+                  <p class="cards-title-description">
+                    For medium gathering of frienfs
+                  </p>
+                  <p class="cards-title-price">$45</p>
+                </div>
+
+                <div class="cards-rating">
+                  <svg class="cards-rating-icon">
+                    <use xlink:href="Assets/img/sprite.svg#icon-star"></use>
+                  </svg>
+
+                  <svg class="cards-rating-icon">
+                    <use xlink:href="Assets/img/sprite.svg#icon-star"></use>
+                  </svg>
+
+                  <svg class="cards-rating-icon">
+                    <use xlink:href="Assets/img/sprite.svg#icon-star"></use>
+                  </svg>
+
+                  <svg class="cards-rating-icon">
+                    <use xlink:href="Assets/img/sprite.svg#icon-star"></use>
+                  </svg>
+
+                  <svg class="cards-rating-icon">
+                    <use xlink:href="Assets/img/sprite.svg#icon-star"></use>
+                  </svg>
+                </div>
+                <br />
+
+                <br />
+                <a href="#" class="filter-btn cta-btn">Book Now</a>
+              </div>
+            </div>
+
+            <!-- CARD 6 -->
+
+            <div class="cards-container-slide">
+              <div class="cards-container-content">
+                <img src="Assets/img/reserved-6.avif" alt="popular meal" />
+
+                <div class="cards-title">
+                  <h2 class="cards-title-text">Ten-Seater Table</h2>
+                  <p class="cards-title-description">
+                    For large gathering of friends
+                  </p>
+                  <p class="cards-title-price">$50</p>
+                </div>
+
+                <div class="cards-rating">
+                  <svg class="cards-rating-icon">
+                    <use xlink:href="Assets/img/sprite.svg#icon-star"></use>
+                  </svg>
+
+                  <svg class="cards-rating-icon">
+                    <use xlink:href="Assets/img/sprite.svg#icon-star"></use>
+                  </svg>
+
+                  <svg class="cards-rating-icon">
+                    <use xlink:href="Assets/img/sprite.svg#icon-star"></use>
+                  </svg>
+
+                  <svg class="cards-rating-icon">
+                    <use xlink:href="Assets/img/sprite.svg#icon-star"></use>
+                  </svg>
+
+                  <svg class="cards-rating-icon">
+                    <use xlink:href="Assets/img/sprite.svg#icon-star"></use>
+                  </svg>
+                </div>
+                <br />
+
+                <br />
+                <a href="#" class="filter-btn cta-btn">Book Now</a>
+              </div>
+            </div>
+
+            <!-- CARD 7 -->
+
+            <div class="cards-container-slide">
+              <div class="cards-container-content">
+                <img src="Assets/img/reserved-7.jpg" alt="popular meal" />
+
+                <div class="cards-title">
+                  <h2 class="cards-title-text">Window-side Table</h2>
+                  <p class="cards-title-description">
+                    Scenic view for a relaxed dining experience
+                  </p>
+                  <p class="cards-title-price">$50</p>
+                </div>
+
+                <div class="cards-rating">
+                  <svg class="cards-rating-icon">
+                    <use xlink:href="Assets/img/sprite.svg#icon-star"></use>
+                  </svg>
+
+                  <svg class="cards-rating-icon">
+                    <use xlink:href="Assets/img/sprite.svg#icon-star"></use>
+                  </svg>
+
+                  <svg class="cards-rating-icon">
+                    <use xlink:href="Assets/img/sprite.svg#icon-star"></use>
+                  </svg>
+
+                  <svg class="cards-rating-icon">
+                    <use xlink:href="Assets/img/sprite.svg#icon-star"></use>
+                  </svg>
+
+                  <svg class="cards-rating-icon">
+                    <use xlink:href="Assets/img/sprite.svg#icon-star"></use>
+                  </svg>
+                </div>
+                <br />
+
+                <br />
+                <a href="#" class="filter-btn cta-btn">Book Now</a>
+              </div>
+            </div>
+
+            <!-- CARD 8 -->
+
+            <div class="cards-container-slide">
+              <div class="cards-container-content">
+                <img src="Assets/img/reserved-8.webp" alt="popular meal" />
+
+                <div class="cards-title">
+                  <h2 class="cards-title-text">Booth Seating Table</h2>
+                  <p class="cards-title-description">Cozy enclosed-</p>
+                  <p class="cards-title-price">$50</p>
+                </div>
+
+                <div class="cards-rating">
+                  <svg class="cards-rating-icon">
+                    <use xlink:href="Assets/img/sprite.svg#icon-star"></use>
+                  </svg>
+
+                  <svg class="cards-rating-icon">
+                    <use xlink:href="Assets/img/sprite.svg#icon-star"></use>
+                  </svg>
+
+                  <svg class="cards-rating-icon">
+                    <use xlink:href="Assets/img/sprite.svg#icon-star"></use>
+                  </svg>
+
+                  <svg class="cards-rating-icon">
+                    <use xlink:href="Assets/img/sprite.svg#icon-star"></use>
+                  </svg>
+
+                  <svg class="cards-rating-icon">
+                    <use xlink:href="Assets/img/sprite.svg#icon-star"></use>
+                  </svg>
+                </div>
+                <br />
+
+                <br />
+                <a href="#" class="filter-btn cta-btn">Book Now</a>
+              </div>
+            </div>
+
+            <!-- CARD 9 -->
+
+            <div class="cards-container-slide">
+              <div class="cards-container-content">
+                <img src="Assets/img/reserved-9.avif" alt="popular meal" />
+
+                <div class="cards-title">
+                  <h2 class="cards-title-text">VIP Private Table</h2>
+                  <p class="cards-title-description">
+                    Exclusive and secluded dining
+                  </p>
+                  <p class="cards-title-price">$250</p>
+                </div>
+
+                <div class="cards-rating">
+                  <svg class="cards-rating-icon">
+                    <use xlink:href="Assets/img/sprite.svg#icon-star"></use>
+                  </svg>
+
+                  <svg class="cards-rating-icon">
+                    <use xlink:href="Assets/img/sprite.svg#icon-star"></use>
+                  </svg>
+
+                  <svg class="cards-rating-icon">
+                    <use xlink:href="Assets/img/sprite.svg#icon-star"></use>
+                  </svg>
+
+                  <svg class="cards-rating-icon">
+                    <use xlink:href="Assets/img/sprite.svg#icon-star"></use>
+                  </svg>
+
+                  <svg class="cards-rating-icon">
+                    <use xlink:href="Assets/img/sprite.svg#icon-star"></use>
+                  </svg>
+                </div>
+                <br />
+
+                <br />
+                <a href="#" class="filter-btn cta-btn">Book Now</a>
+              </div>
+            </div>
+
+            <!-- CARD 10 -->
+
+            <div class="cards-container-slide">
+              <div class="cards-container-content">
+                <img src="Assets/img/reserved-10.jpg" alt="popular meal" />
+
+                <div class="cards-title">
+                  <h2 class="cards-title-text">Outdoor patio Table</h2>
+                  <p class="cards-title-description">For open-air dining</p>
+                  <p class="cards-title-price">$30</p>
+                </div>
+
+                <div class="cards-rating">
+                  <svg class="cards-rating-icon">
+                    <use xlink:href="Assets/img/sprite.svg#icon-star"></use>
+                  </svg>
+
+                  <svg class="cards-rating-icon">
+                    <use xlink:href="Assets/img/sprite.svg#icon-star"></use>
+                  </svg>
+
+                  <svg class="cards-rating-icon">
+                    <use xlink:href="Assets/img/sprite.svg#icon-star"></use>
+                  </svg>
+
+                  <svg class="cards-rating-icon">
+                    <use xlink:href="Assets/img/sprite.svg#icon-star"></use>
+                  </svg>
+
+                  <svg class="cards-rating-icon">
+                    <use xlink:href="Assets/img/sprite.svg#icon-star"></use>
+                  </svg>
+                </div>
+                <br />
+
+                <br />
+                <a href="#" class="filter-btn cta-btn">Book Now</a>
+              </div>
+            </div>
+
+            <!-- CARD 11 -->
+
+            <div class="cards-container-slide">
+              <div class="cards-container-content">
+                <img src="Assets/img/reserved-11.jpg" alt="popular meal" />
+
+                <div class="cards-title">
+                  <h2 class="cards-title-text">Bar Counter Seat</h2>
+                  <p class="cards-title-description">
+                    Casual seating at the bar area
+                  </p>
+                  <p class="cards-title-price">$60</p>
+                </div>
+
+                <div class="cards-rating">
+                  <svg class="cards-rating-icon">
+                    <use xlink:href="Assets/img/sprite.svg#icon-star"></use>
+                  </svg>
+
+                  <svg class="cards-rating-icon">
+                    <use xlink:href="Assets/img/sprite.svg#icon-star"></use>
+                  </svg>
+
+                  <svg class="cards-rating-icon">
+                    <use xlink:href="Assets/img/sprite.svg#icon-star"></use>
+                  </svg>
+
+                  <svg class="cards-rating-icon">
+                    <use xlink:href="Assets/img/sprite.svg#icon-star"></use>
+                  </svg>
+
+                  <svg class="cards-rating-icon">
+                    <use xlink:href="Assets/img/sprite.svg#icon-star"></use>
+                  </svg>
+                </div>
+                <br />
+
+                <br />
+                <a href="#" class="filter-btn cta-btn">Book Now</a>
+              </div>
+            </div>
+
+            <!-- CARD 12 -->
+
+            <div class="cards-container-slide">
+              <div class="cards-container-content">
+                <img src="Assets/img/reserved-12.jpg" alt="popular meal" />
+
+                <div class="cards-title">
+                  <h2 class="cards-title-text">High top Table</h2>
+                  <p class="cards-title-description">
+                    Elevated seating often in lounges
+                  </p>
+                  <p class="cards-title-price">$30</p>
+                </div>
+
+                <div class="cards-rating">
+                  <svg class="cards-rating-icon">
+                    <use xlink:href="Assets/img/sprite.svg#icon-star"></use>
+                  </svg>
+
+                  <svg class="cards-rating-icon">
+                    <use xlink:href="Assets/img/sprite.svg#icon-star"></use>
+                  </svg>
+
+                  <svg class="cards-rating-icon">
+                    <use xlink:href="Assets/img/sprite.svg#icon-star"></use>
+                  </svg>
+
+                  <svg class="cards-rating-icon">
+                    <use xlink:href="Assets/img/sprite.svg#icon-star"></use>
+                  </svg>
+
+                  <svg class="cards-rating-icon">
+                    <use xlink:href="Assets/img/sprite.svg#icon-star"></use>
+                  </svg>
+                </div>
+                <br />
+
+                <br />
+                <a href="#" class="filter-btn cta-btn">Book Now</a>
+              </div>
+            </div>
+
+            <!-- CARD 13 -->
+
+            <div class="cards-container-slide">
+              <div class="cards-container-content">
+                <img src="Assets/img/reserved-13.webp" alt="popular meal" />
+
+                <div class="cards-title">
+                  <h2 class="cards-title-text">Chef's Table</h2>
+                  <p class="cards-title-description">
+                    Close to the kitchen for a special experience
+                  </p>
+                  <p class="cards-title-price">$80</p>
+                </div>
+
+                <div class="cards-rating">
+                  <svg class="cards-rating-icon">
+                    <use xlink:href="Assets/img/sprite.svg#icon-star"></use>
+                  </svg>
+
+                  <svg class="cards-rating-icon">
+                    <use xlink:href="Assets/img/sprite.svg#icon-star"></use>
+                  </svg>
+
+                  <svg class="cards-rating-icon">
+                    <use xlink:href="Assets/img/sprite.svg#icon-star"></use>
+                  </svg>
+
+                  <svg class="cards-rating-icon">
+                    <use xlink:href="Assets/img/sprite.svg#icon-star"></use>
+                  </svg>
+
+                  <svg class="cards-rating-icon">
+                    <use xlink:href="Assets/img/sprite.svg#icon-star"></use>
+                  </svg>
+                </div>
+                <br />
+
+                <br />
+                <a href="#" class="filter-btn cta-btn">Book Now</a>
+              </div>
+            </div>
+
+            <!-- CARD 14 -->
+
+            <div class="cards-container-slide">
+              <div class="cards-container-content">
+                <img src="Assets/img/reserved-14.jpg" alt="popular meal" />
+
+                <div class="cards-title">
+                  <h2 class="cards-title-text">Banquet Table</h2>
+                  <p class="cards-title-description">
+                    For Events and large celebrations
+                  </p>
+                  <p class="cards-title-price">$300</p>
+                </div>
+
+                <div class="cards-rating">
+                  <svg class="cards-rating-icon">
+                    <use xlink:href="Assets/img/sprite.svg#icon-star"></use>
+                  </svg>
+
+                  <svg class="cards-rating-icon">
+                    <use xlink:href="Assets/img/sprite.svg#icon-star"></use>
+                  </svg>
+
+                  <svg class="cards-rating-icon">
+                    <use xlink:href="Assets/img/sprite.svg#icon-star"></use>
+                  </svg>
+
+                  <svg class="cards-rating-icon">
+                    <use xlink:href="Assets/img/sprite.svg#icon-star"></use>
+                  </svg>
+
+                  <svg class="cards-rating-icon">
+                    <use xlink:href="Assets/img/sprite.svg#icon-star"></use>
+                  </svg>
+                </div>
+                <br />
+
+                <br />
+                <a href="#" class="filter-btn cta-btn">Book Now</a>
+              </div>
+            </div>
+
+            <!-- CARD 15 -->
+
+            <div class="cards-container-slide">
+              <div class="cards-container-content">
+                <img src="Assets/img/reserved-15.jpg" alt="popular meal" />
+
+                <div class="cards-title">
+                  <h2 class="cards-title-text">Romantic Candlelight Table</h2>
+                  <p class="cards-title-description">
+                    Special ambience for date
+                  </p>
+                  <p class="cards-title-price">$130</p>
+                </div>
+
+                <div class="cards-rating">
+                  <svg class="cards-rating-icon">
+                    <use xlink:href="Assets/img/sprite.svg#icon-star"></use>
+                  </svg>
+
+                  <svg class="cards-rating-icon">
+                    <use xlink:href="Assets/img/sprite.svg#icon-star"></use>
+                  </svg>
+
+                  <svg class="cards-rating-icon">
+                    <use xlink:href="Assets/img/sprite.svg#icon-star"></use>
+                  </svg>
+
+                  <svg class="cards-rating-icon">
+                    <use xlink:href="Assets/img/sprite.svg#icon-star"></use>
+                  </svg>
+
+                  <svg class="cards-rating-icon">
+                    <use xlink:href="Assets/img/sprite.svg#icon-star"></use>
+                  </svg>
+                </div>
+                <br />
+
+                <br />
+                <a href="#" class="filter-btn cta-btn">Book Now</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Navigation button -->
+
+          <div class="cards-navigation">
+            <!-- Prev Button -->
+
+            <div class="cards-navigation-btn" id="left">
+              <svg class="cards-navigation-icon prev">
+                <use xlink:href="Assets/img/sprite.svg#icon-arrow-right"></use>
+              </svg>
+            </div>
+
+            <!-- Next Button -->
+
+            <div class="cards-navigation-btn" id="right">
+              <svg class="cards-navigation-icon next">
+                <use xlink:href="Assets/img/sprite.svg#icon-arrow-right"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TESTIMONIALS -->
+      <section class="testimonials" id="testimonials">
+        <h2 class="secondary-heading"><strong>20k+</strong> Testimonials</h2>
+
+        <p class="normal-font testimonials-description">
+          Real stories from diners who've savored the savoryNest experirence
+        </p>
+
+        <div class="testimonials-container">
+          <!-- Testimonials 1 -->
+          <div class="testimonials-card">
+            <p class="testimonials-text normal-font">
+              "The food was absolutely delicious! Every bite felt like a
+              celebration. The ambience made the night unforgettable."
+            </p>
+
+            <div class="testimonials-details">
+              <img
+                src="Assets/img/testimonial-1.jpg"
+                alt="testimonial"
+                loading="lazy"
+              />
+              <div class="testimonials-title">
+                <h3 class="testimonials-name small-font">Sarah Johnson</h3>
+                <span class="testimonials-role"> Food Blogger</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonials 2 -->
+          <div class="testimonials-card">
+            <p class="testimonials-text normal-font">
+              “SavoryNest blends tradition and creativity perfectly. The chef’s
+              passion truly shines through in every dish.”
+            </p>
+
+            <div class="testimonials-details">
+              <img
+                src="Assets/img/testimonial-2.avif"
+                alt="testimonial"
+                loading="lazy"
+              />
+              <div class="testimonials-title">
+                <h3 class="testimonials-name small-font">David Smith</h3>
+                <span class="testimonials-role"> Local Guide</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonials 3 -->
+          <div class="testimonials-card">
+            <p class="testimonials-text normal-font">
+              “From the warm service to the exquisite flavors, this is
+              hands-down my favorite restaurant in town.”
+            </p>
+
+            <div class="testimonials-details">
+              <img
+                src="Assets/img/testimonial-3.avif"
+                alt="testimonial"
+                loading="lazy"
+              />
+              <div class="testimonials-title">
+                <h3 class="testimonials-name small-font">Jerry Kingsley</h3>
+                <span class="testimonials-role"> Entrepreneur</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonials 4 -->
+          <div class="testimonials-card">
+            <p class="testimonials-text normal-font">
+              “I hosted my birthday dinner here, and everything was perfect —
+              from the staff’s warmth to the unforgettable dishes.”
+            </p>
+
+            <div class="testimonials-details">
+              <img
+                src="Assets/img/testimonial-4.jpg"
+                alt="testimonial"
+                loading="lazy"
+              />
+              <div class="testimonials-title">
+                <h3 class="testimonials-name small-font">Felicity Micheal</h3>
+                <span class="testimonials-role"> Event Planner</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonials 5 -->
+          <div class="testimonials-card">
+            <p class="testimonials-text normal-font">
+              “SavoryNest is more than food — it’s an experience. I’ll
+              definitely be coming back with friends.”
+            </p>
+
+            <div class="testimonials-details">
+              <img
+                src="Assets/img/testimonial-5.jpg"
+                alt="testimonial"
+                loading="lazy"
+              />
+              <div class="testimonials-title">
+                <h3 class="testimonials-name small-font">Chloe Martinez</h3>
+                <span class="testimonials-role"> Travel Blogger</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonials 6 -->
+          <div class="testimonials-card">
+            <p class="testimonials-text normal-font">
+              “The chef’s attention to detail is unmatched. Every dish felt like
+              it was prepared just for me.”
+            </p>
+
+            <div class="testimonials-details">
+              <img
+                src="Assets/img/testimonial-6.avif"
+                alt="testimonial"
+                loading="lazy"
+              />
+              <div class="testimonials-title">
+                <h3 class="testimonials-name small-font">Liam Carter</h3>
+                <span class="testimonials-role"> Business Consultant</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonials 7 -->
+          <div class="testimonials-card">
+            <p class="testimonials-text normal-font">
+              “A cozy spot with world-class meals. Truly the best dining
+              experience I’ve had in years.”
+            </p>
+
+            <div class="testimonials-details">
+              <img
+                src="Assets/img/testimonnial-7.jpg"
+                alt="testimonial"
+                loading="lazy"
+              />
+              <div class="testimonials-title">
+                <h3 class="testimonials-name small-font">Sofia Adeyemi</h3>
+                <span class="testimonials-role"> Fashion Designer</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonials 8 -->
+          <div class="testimonials-card">
+            <p class="testimonials-text normal-font">
+              “SavoryNest turned a simple dinner into an unforgettable night.
+              Highly recommended!”
+            </p>
+
+            <div class="testimonials-details">
+              <img
+                src="Assets/img/testimonial-8.avif"
+                alt="testimonial"
+                loading="lazy"
+              />
+              <div class="testimonials-title">
+                <h3 class="testimonials-name small-font">Ethan William</h3>
+                <span class="testimonials-role"> Photographer </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="faq" id="faq">
+        <h1 class="secondary-heading">Frequently Asked Questions</h1>
+        <p class="faq-text normal-font">
+          "Find quick answers to some of our most common guest inquiries."
+          <br />
+          From reservations to special requests, here’s everything you need to
+          know. <br />
+          Got questions? We’ve got answers.
+        </p>
+
+        <div class="faq-accordion">
+          <div class="faq-accordion-content">
+            <div class="faq-list">
+              <div class="faq-question" aria-expanded="false">
+                <p class="normal-font">Do you offer online reservations?</p>
+                <svg class="faq-icon">
+                  <use xlink:href="Assets/img/sprite.svg#icon-down"></use>
+                </svg>
+              </div>
+
+              <div class="faq-answer">
+                Yes! You can easily reserve a table through our website using
+                the “Reserve a Table” button.
+              </div>
+            </div>
+
+            <div class="faq-list">
+              <div class="faq-question" aria-expanded="false">
+                <p class="normal-font">
+                  Can I order food for delivery or pickup?
+                </p>
+                <svg class="faq-icon">
+                  <use xlink:href="Assets/img/sprite.svg#icon-down"></use>
+                </svg>
+              </div>
+
+              <div class="faq-answer">
+                Absolutely. We partner with top delivery services to bring our
+                dishes to your doorstep, or you can schedule a pickup directly
+                from us.
+              </div>
+            </div>
+
+            <div class="faq-list">
+              <div class="faq-question" aria-expanded="false">
+                <p class="normal-font">Do you cater for private events?</p>
+                <svg class="faq-icon">
+                  <use xlink:href="Assets/img/sprite.svg#icon-down"></use>
+                </svg>
+              </div>
+
+              <div class="faq-answer">
+                Yes, we offer catering for weddings, birthdays, and corporate
+                events. Contact us for a tailored menu.
+              </div>
+            </div>
+
+            <div class="faq-list">
+              <div class="faq-question" aria-expanded="false">
+                <p class="normal-font">Are your ingredients locally sourced?</p>
+                <svg class="faq-icon">
+                  <use xlink:href="Assets/img/sprite.svg#icon-down"></use>
+                </svg>
+              </div>
+
+              <div class="faq-answer">
+                Most of our ingredients come from trusted local farms to ensure
+                freshness and support the community.
+              </div>
+            </div>
+
+            <div class="faq-list">
+              <div class="faq-question" aria-expanded="false">
+                <p class="normal-font">
+                  Do you have vegan or gluten-free options?
+                </p>
+                <svg class="faq-icon">
+                  <use xlink:href="Assets/img/sprite.svg#icon-down"></use>
+                </svg>
+              </div>
+
+              <div class="faq-answer">
+                We have a variety of vegan, vegetarian, and gluten-free meals.
+                Please let us know your dietary needs when ordering.
+              </div>
+            </div>
+
+            <div class="faq-list">
+              <div class="faq-question" aria-expanded="false">
+                <p class="normal-font">
+                  How can I become a sponsor or partner?
+                </p>
+                <svg class="faq-icon">
+                  <use xlink:href="Assets/img/sprite.svg#icon-down"></use>
+                </svg>
+              </div>
+
+              <div class="faq-answer">
+                Simply reach out via our “Contact” page, and our team will get
+                in touch with partnership opportunities.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section class="contact" id="contact">
+        <h2 class="tertiary-heading">Get in Touch</h2>
+
+        <p class="contact-description">
+          We’d love to hear from you! Whether it’s a reservation, inquiry, or
+          feedback — our team is here to help.
+        </p>
+
+        <div class="contact-container">
+          <div class="contact-info">
+            <p class="contact-content normal-font">
+              <img src="Assets/img/location.png" alt="location pin" /><strong
+                >Address:</strong
+              >
+              123 Savory Street, Lagos, Nigeria
+            </p>
+
+            <p class="contact-content normal-font">
+              <img src="Assets/img/phone.gif" alt="location pin" /><strong
+                >Phone:</strong
+              >
+              +234 801 234 5678
+            </p>
+
+            <p class="contact-content normal-font">
+              <img src="Assets/img/email.png" alt="location pin" /><strong
+                >Email:</strong
+              >
+              hello@savorynest.com
+            </p>
+          </div>
+
+          <div class="contact-form">
+            <form>
+              <div class="contact-form-input">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Full name"
+                  required
+                />
+              </div>
+
+              <div class="contact-form-input">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Email Address"
+                  required
+                />
+              </div>
+
+              <div class="contact-form-input">
+                <input
+                  type="tel"
+                  name="phone"
+                  placeholder="Phone Number"
+                  required
+                />
+              </div>
+
+              <div class="contact-form-input">
+                <textarea
+                  name="message"
+                  id="message"
+                  name="message"
+                  minlength="10"
+                  placeholder="Message"
+                ></textarea>
+              </div>
+
+              <button type="button" class="cta-btn filter-btn">Submit</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="member">
+        <div class="member-content">
+          <h2 class="member-heading">
+            Join <span>SavoryNest Membership</span> <br />Save up to 50%.
+          </h2>
+
+          <h2 class="member-heading">
+            Partner With <span>SavoryNest </span> <br />
+            <span>Elevate Your Brand </span> Through Exceptional Dining.
+          </h2>
+
+          <form class="member-form">
+            <input
+              type="email"
+              class="member-email"
+              placeholder="name@gmail.com"
+              autocomplete="off"
+              name="email"
+              id="email"
+              required
+            />
+
+            <button class="member-btn">
+              <svg class="member-btn">
+                <use xlink:href="Assets/img/sprite.svg#icon-arrow-right"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Footer left -->
+        <div class="footer-left">
+          <div class="navbar-logo">
+            <h1 class="navbar-logo-text">SavoryNest</h1>
+            <svg class="navbar-logo-img">
+              <use xlink:href="Assets/img/sprite.svg#icon-food"></use>
+            </svg>
+          </div>
+          <p class="footer-left-text small-font">
+            SavoryNest — where tradition, creativity, and fresh flavors create
+            unforgettable moments.
+          </p>
+
+          <div class="footer-left-social">
+            <a href="#">
+              <svg class="footer-link">
+                <use xlink:href="Assets/img/sprite.svg#icon-x"></use>
+              </svg>
+            </a>
+
+            <a href="#">
+              <svg class="footer-link">
+                <use xlink:href="Assets/img/sprite.svg#icon-facebook"></use>
+              </svg>
+            </a>
+
+            <a href="#">
+              <svg class="footer-link">
+                <use xlink:href="Assets/img/sprite.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Footer right -->
+        <div class="footer-right">
+          <div class="footer-right-group">
+            <h2>Support</h2>
+            <ul class="footer-list">
+              <li>Account</li>
+              <li>Support Center</li>
+              <li>Feedback</li>
+              <li>Accessibility</li>
+            </ul>
+          </div>
+
+          <div class="footer-right-group">
+            <h2>Our Menu</h2>
+            <ul class="footer-list">
+              <li>Special</li>
+              <li>Popular</li>
+              <li>Categories</li>
+            </ul>
+          </div>
+
+          <div class="footer-right-group">
+            <h2>Useful Links</h2>
+            <ul class="footer-list">
+              <li>Payment & Tax</li>
+              <li>Terms of Service</li>
+              <li>Privacy Policy</li>
+              <li>About Us</li>
+            </ul>
+          </div>
+
+          <div class="footer-right-group">
+            <h2>Get in touch</h2>
+            <ul class="footer-list">
+              <li>savorynest@gmail.com</li>
+              <li>+123 45656 789 01067</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-benediction">
+        <p class="normal-font">
+          &copy; 2025 Hycienth Paul. All right reserved.
+        </p>
+
+        <div class="footer-pay">
+          <img src="Assets/img/paypal.jpg" alt="card" loading="lazy" />
+
+          <img src="Assets/img/visa.jpg" alt="card" loading="lazy" />
+
+          <img src="Assets/img/america-express.jpg" alt="card" loading="lazy" />
+
+          <img src="Assets/img/mastercard.jpg" alt="card" loading="lazy" />
+
+          <img src="Assets/img/discover.jpg" alt="card" loading="lazy" />
+        </div>
+      </div>
+    </footer>
+  </body>
+  <!-- js Script  -->
+  <script src="Assets/js/script.js"></script>
+
+  <!-- scroll reveal -->
+   <script src="Assets/js/scrollreveal.min.js"></script>
+</html>

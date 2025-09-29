@@ -1,0 +1,57 @@
+*,
+*::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+*::selection{
+  background: #ffd689;
+  color: $color-text;
+} 
+
+html{
+   font-size: 62.5%;
+
+   @include screen(XX-lg){
+    font-size: 100%;
+  
+   }
+   
+   @include screen(X-lg){
+    font-size: 87.5%;
+   }
+
+   @include screen(tab-port){
+    font-size: 50%;
+   }
+
+   @include screen(mobile-port){
+    font-size: 43.75%;
+   }
+
+
+}
+
+
+body {
+   
+  box-sizing: border-box;
+  background: $color-primary;
+
+}
+
+ul * {
+  list-style: none;
+}
+
+*a,
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+input{
+  outline: 0;
+}
