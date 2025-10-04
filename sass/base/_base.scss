@@ -6,45 +6,59 @@
   box-sizing: inherit;
 }
 
-*::selection{
+*::selection {
   background: $color-secondary;
   color: $color-black;
-} 
+}
 
-html{
-   font-size: 62.5%;
+html {
+  font-size: 62.5%;
 
-   @include screen(XX-lg){
+  @include screen(XX-lg) {
     font-size: 100%;
-  
-   }
-   
-   @include screen(X-lg){
+  }
+
+  @include screen(X-lg) {
     font-size: 87.5%;
-   }
+  }
 
-   @include screen(tab-port){
+  @include screen(tab-port) {
     font-size: 50%;
-   }
+  }
 
-   @include screen(mobile-port){
+  @include screen(mobile-port) {
     font-size: 43.75%;
-   }
-
+  }
 
 }
+
 
 
 body {
-   
   box-sizing: border-box;
   background: $color-primary;
-
 }
+
+::-webkit-scrollbar{
+  background: $color-secondary;
+}
+
+::-webkit-scrollbar-thumb{
+  background: $color-heading;
+  border-radius: 10rem;
+  cursor: pointer;
+
+
+  &:hover{
+    background: rgba($color-heading, .8)
+  }
+}
+
 
 ul * {
   list-style: none;
 }
+
 
 *a,
 a:link,
@@ -52,6 +66,7 @@ a:visited {
   text-decoration: none;
 }
 
-input{
+
+input {
   outline: 0;
 }

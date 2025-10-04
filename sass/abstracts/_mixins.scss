@@ -10,9 +10,10 @@
   //   padding: 4rem 4.5rem;
   // }
 
-  // @include screen(mobile-port) {
-  //   padding: 4rem 2rem;
-  // }
+  @include screen(mobile-port) {
+    padding-inline: 2rem;
+  }
+  
 }
 
 @mixin min-sectpad {
@@ -23,7 +24,7 @@
   }
 
   @include screen(mobile-port) {
-    padding-inline: 1.3rem;
+    padding-inline: 2rem;
   }
 }
 
@@ -37,7 +38,7 @@
 //-sm-mobbile : 350px
 // - mobile-port : 610px
 // - mobile-land : 915px
-//  -tab-port : 850px
+//  -tab-port : 1000px
 //  - tab-land : 1180px
 //  - lg : 1280px
 //  - X-lg : 1440px
@@ -64,7 +65,7 @@
   }
 
   @if $breakpoint == tab-port {
-    @media (max-width: 56.25em) {
+    @media (max-width: 62.5em) {
       @content;
     }
   }

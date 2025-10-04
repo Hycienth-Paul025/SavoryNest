@@ -6,9 +6,6 @@
   align-items: center;
   justify-self: center;
 
-  @include screen (mobile-port){
-padding-inline: 2rem;
-  }
 
   & p {
     text-align: center;
@@ -23,7 +20,7 @@ padding-inline: 2rem;
     position: relative;
 
     @include screen(mobile-port) {
-     width: 100%;
+      width: 100%;
     }
 
     &-list {
@@ -63,7 +60,7 @@ padding-inline: 2rem;
       width: 100%;
       height: auto;
       text-align: center;
-      box-shadow: 0 0.4rem 1rem $color-shadow;
+      box-shadow: 0 0.4rem 2rem rgba($color-shadow, 0.1);
       border-radius: 0.5rem;
       cursor: pointer;
       user-select: none;
@@ -72,10 +69,8 @@ padding-inline: 2rem;
 
       @include screen(tab-port) {
         padding-inline: 0;
-       height: auto;
+        height: auto;
       }
-
-    
 
       &:hover {
         border: 2px solid $color-heading;
@@ -87,13 +82,9 @@ padding-inline: 2rem;
         object-fit: cover;
         pointer-events: none;
         border-radius: 0.5rem;
-
-      
-       
       }
     }
   }
-
 
   &-title {
     display: flex;
@@ -102,47 +93,44 @@ padding-inline: 2rem;
     margin-block: 0.5rem;
     color: $color-black;
 
-
     &-text {
       font-size: 1.7rem;
       font-weight: 700;
 
-      @include screen (mobile-port){
+      @include screen(mobile-port) {
         @include mobile-font;
       }
     }
-
 
     &-description {
       font-size: 1.5rem;
       font-weight: 400;
 
-        @include screen (mobile-port){
+      @include screen(mobile-port) {
         @include mobile-font;
       }
     }
 
-
     &-price {
       font-size: 1.3rem;
-      font-weight: 500;
+      font-weight: 600;
 
-        @include screen (mobile-port){
+      @include screen(mobile-port) {
         @include mobile-font;
       }
     }
   }
 
-  
   &-rating {
     display: flex;
     justify-content: center;
     column-gap: 0.5rem;
 
     &-icon {
-      width: 1.4rem;
-      height: 1.4rem;
+      width: 2rem;
+      height: 2rem;
       fill: #ffe600;
+      filter: drop-shadow(0 .1rem .1rem rgba($color-shadow,.5))
     }
   }
 
@@ -155,7 +143,7 @@ padding-inline: 2rem;
     align-items: center;
     position: relative;
 
-    @include screen(mobile-port){
+    @include screen(mobile-port) {
       column-gap: 5rem;
     }
 
@@ -164,6 +152,7 @@ padding-inline: 2rem;
       padding: 1rem;
       display: flex;
       border-radius: 50%;
+      box-shadow: 0 .4rem .5rem rgba($color-shadow, 0.1);
     }
 
     &-icon {

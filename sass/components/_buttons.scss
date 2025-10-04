@@ -1,22 +1,19 @@
 .active-btn {
-  background: linear-gradient(30deg, $color-secondary 0%, $color-heading 60%);
+ background: linear-gradient(30deg, $color-secondary 0%, $color-heading 60%);
   padding: 0.6rem 1.2rem;
   border-radius: 0.7rem;
+  border: none;
   color: $color-white;
-
   &:hover {
     color: $color-white;
   }
 
-  /* add active :active */
 }
 
 .cta-btn {
-  background: linear-gradient(
-    180deg,
-    $color-secondary 0%,
-    $color-heading 60%
-  );
+
+  background: $color-btn;
+  border: none;
   padding: 0.6rem 1.2rem;
   border-radius: 0.7rem;
   color: $color-white;
@@ -26,6 +23,10 @@
   &:active {
     transform: translateY(2px);
     box-shadow: 0 0.2rem 0.2rem $color-shadow;
+  }
+
+  &:hover{
+   background: rgba($color-btn , .8)
   }
 }
 
@@ -37,30 +38,3 @@
    cursor: pointer;
 }
 
-.modal-btn{
-  border: none;
-  cursor: pointer;
-  background: $color-heading;
-  color: initial;
-  padding: 2rem;
-  border-radius: 2.5rem;
-  font-weight: 500;
-  filter:contrast(180%);
-  transition: filter .3s, color .3s;
-
-
-  &:last-child{
-    background: $color-secondary;
-
-    &:hover{
-        //  color: $color-white;
-    filter: contrast(150%)
-    }
-  }
-
-
-
-  &:hover{
-filter: contrast(150%)
-  }
-}

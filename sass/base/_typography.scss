@@ -11,28 +11,22 @@ body {
   letter-spacing: 0.2rem;
   text-transform: capitalize;
   line-height: 1;
-  
 
-
-   @include screen(XX-lg){
+  @include screen(XX-lg) {
     font-size: 7.6rem;
-   }
+  }
 
-   
-   @include screen(X-lg){
+  @include screen(X-lg) {
     font-size: 6.4rem;
-   }
+  }
 
-   @include screen(tab-port){
+  @include screen(tab-port) {
     font-size: 6rem;
-   }
+  }
 
-   @include screen(mobile-port){
+  @include screen(mobile-port) {
     font-size: 5.5rem;
-   }
-
-  
-   
+  }
 }
 
 .secondary-heading {
@@ -43,7 +37,6 @@ body {
   line-height: 1;
   padding: 2rem;
   text-align: center;
-  
 }
 
 .tertiary-heading {
@@ -61,16 +54,17 @@ body {
   line-height: 1.5;
   font-weight: inherit;
 
-   @include screen(tab-port){
-        @include mobile-font;
-      }
+  
+  @include screen(tab-port) {
+    @include mobile-font;
+  }
 }
 
 .normal-font {
   font-size: 1.7rem;
   line-height: 1.5;
 
-    @include screen(tab-port){
-        @include mobile-font;
-      }
+  @include screen(tab-port) {
+    @include mobile-font;
+  }
 }

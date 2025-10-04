@@ -1,6 +1,7 @@
 .footer {
   @include min-sectpad;
   background: $color-nav;
+  color: $color-white;
 
   &-container {
     display: flex;
@@ -38,11 +39,11 @@
     fill: $color-white;
     margin-inline: 1rem;
     padding: 0.5rem;
-    transition: background-color 0.4s ease;
+    transition:  0.4s ease;
 
     &:hover {
-      background-color: $color-heading;
-      border-radius: 0.5rem;
+      fill: $color-heading;
+      transform: translateY(-.3rem);
     }
   }
 

@@ -28,19 +28,13 @@
       top: 10%;
       right: 2rem;
     }
-  } 
+  }
 
   &-container {
     width: 60%;
     height: auto;
     border-radius: 1rem;
     color: $color-white;
-    background: linear-gradient(
-        to bottom,
-        rgba($color-black, 0.9),
-        rgba($color-black, 0.9)
-      ),
-      no-repeat center url(../../Assets/img/membership.jpeg);
     padding: 2rem;
     border: 2px solid $color-primary;
 
@@ -51,22 +45,23 @@
   }
 
   &-text {
-    margin-bottom: 4rem;
+    margin-bottom: 3.5rem;
 
-    @include screen(mobile-port){
-      margin-block: 2.5rem ;
-    } 
+    @include screen(mobile-port) {
+      margin-block: 2.5rem;
+    }
   }
 
   &-benefits {
-    display: flex;
-    flex-direction: column;
-    row-gap: 1.3rem;
-    margin-bottom: 4rem;
+    display: block;
+    margin-bottom: 2rem;
+
+    & li {
+      padding-bottom: 1.3rem;
+    }
 
     @include screen(mobile-port) {
-      margin-bottom: 0;
-
+      margin-bottom: 1rem;
     }
   }
 
@@ -75,7 +70,7 @@
     column-gap: 1.5rem;
 
     @include screen(mobile-port) {
-      margin-top: 5rem ;
+      margin-top: 5rem;
       flex-direction: column;
       row-gap: 1.5rem;
     }
@@ -83,7 +78,27 @@
 
   &-btn {
     font-size: 2rem;
-    text-align: center;
+    font-size: 700;
+    background: $color-btn;
+    color: $color-white;
+
+    padding: 0.6rem 1.2rem;
+    border-radius: 0.7rem;
+    cursor: pointer;
+    transition: background 0.3s;
+
+    &:nth-child(2) {
+      background: transparent;
+      border: 1px solid $color-btn;
+
+      &:hover {
+        border: 1px solid transparent;
+      }
+    }
+
+    &:hover {
+      background: #f88407cc;
+    }
   }
 
   &-apology {

@@ -1,13 +1,7 @@
 .about {
   @include sectpad;
   min-height: 100vh;
-  display: flex;
   overflow: hidden;
-
-  @include screen(mobile-port){
-    padding-inline: 2rem;
-  }
-
 
 
   &-text {
@@ -32,41 +26,34 @@
     margin: 0 auto;
     padding-block: 5rem;
 
-      @include screen(mobile-port) {
-        grid-template-columns: repeat(1, 1fr);
-      }
+    @include screen(mobile-port) {
+      grid-template-columns: repeat(1, 1fr);
+    }
 
     &-card {
       height: 100%;
       padding: 1.5rem;
-      box-shadow: 0 0.2rem 2rem rgba($color-shadow, 0.2);
+      box-shadow: 0 0.2rem 2rem rgba($color-shadow, 0.07);
       border-radius: 1rem;
       background: $color-white;
 
-    
-
       &-image {
-        display: flex;
-        column-gap: 1rem;
-        align-items: center;
-        justify-content: center;
+        display: block;
         padding-bottom: 2rem;
 
         & img {
           height: 3rem;
+          margin-bottom: 1rem;
         }
 
         .card-title {
           font-size: 2rem;
           font-weight: 700;
-          text-align: center;
-          //  color: $color-black;
         }
       }
 
       .card-description {
-        text-align: center;
-        font-size: 1.5rem; 
+        font-size: 1.5rem;
         line-height: 1.2;
         font-weight: 500;
         padding-inline: 0.3rem;
@@ -75,9 +62,9 @@
           line-height: 1.5;
         }
 
-          @include screen(mobile-port){
-        @include mobile-font;
-      }
+        @include screen(mobile-port) {
+          @include mobile-font;
+        }
       }
     }
   }
@@ -88,10 +75,10 @@
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     text-align: center;
 
-    @include screen( XX-lg-port) {
+    @include screen(XX-lg-port) {
       flex-direction: column-reverse;
       row-gap: 4rem;
     }
@@ -111,29 +98,29 @@
 
     &-description {
       flex-basis: 50%;
+      text-align: left;
     }
 
     .chef-title {
       font-size: 4rem;
       font-weight: 700;
-      color: $color-blue;
+      color: $color-heading;
     }
 
     .chef-role {
       font-size: 2rem;
-      color: $color-blue;
       font-weight: 600;
       font-style: italic;
+      color: $color-heading;
     }
 
     .chef-text {
       margin-top: 2rem;
       width: 100%;
 
-      @include screen(mobile-port){
+      @include screen(mobile-port) {
         @include mobile-font;
       }
-
     }
   }
 
@@ -142,11 +129,9 @@
   &-collage-container {
     text-align: center;
 
-
-    p{
-        @include screen(mobile-port){
+    p {
+      @include screen(mobile-port) {
         @include mobile-font;
-        
       }
     }
   }
@@ -162,8 +147,8 @@
     //  height: 100%;
     margin-top: 2rem;
 
-      @include screen(tab-port){
-       width: 100%;
-      }
+    @include screen(tab-port) {
+      width: 100%;
+    }
   }
 }

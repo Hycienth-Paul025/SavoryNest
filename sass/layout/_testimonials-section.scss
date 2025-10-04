@@ -1,9 +1,6 @@
 .testimonials {
   @include sectpad;
 
-  @include screen(mobile-port) {
-    padding-inline: 2rem;
-  }
 
   strong {
     font-size: 9rem;
@@ -30,7 +27,7 @@
     background: rgba($color-white, 0.9);
     padding: 1.5rem;
     border-radius: 0.5rem;
-    box-shadow: 0 0.2rem 1rem $color-shadow;
+    box-shadow: 0 0.2rem 1rem rgba($color-shadow, .07);
   }
 
   &-text {

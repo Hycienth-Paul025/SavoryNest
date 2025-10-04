@@ -48,7 +48,6 @@ document.addEventListener("DOMContentLoaded", () => {
   if (Navlinks.length > 0 && Navbar && NavOverlay) {
     Navlinks.forEach((links) =>
       links.addEventListener("click", () => {
-        
         removeActive();
         links.classList.add("active-btn");
 
@@ -65,8 +64,6 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   //// NAVBAR ACTIVE LINK
-
-  // Navlinks.forEach()
 
   /// DARK AND LIGHT THEME MODE
   const body = document.body;
@@ -108,7 +105,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   initTheme();
 
-  ////// MODAL FUNCTION
+  //////    MODAL FUNCTION
   const modalEL = document.querySelector(".modal");
   const modalCLose = document.querySelector(".modal-close");
   const modalCancel = document.getElementById("modal-cancel");
@@ -131,6 +128,9 @@ document.addEventListener("DOMContentLoaded", () => {
     })
   );
 
+
+
+  
   /// MENU FILTERATION BUTTON FUNCTION
   const filterBtn = document.querySelectorAll(".menu-btn a");
   const filterCards = document.querySelectorAll(".menu-image");
@@ -188,7 +188,9 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  ///////IMAGE CARD SLIDING LOOP FUNCTION
+
+
+  ///////   IMAGE CARD SLIDING LOOP FUNCTION
   const cardContainer = document.querySelector(".cards-container");
   const cardsList = document.querySelector(".cards-container-list");
   const arrowBtn = document.querySelectorAll(".cards-navigation-btn");
@@ -261,6 +263,20 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     }
   }
+
+
+
+
+  /////  MEMBERSHIP JOIN BUTTON FUNCTION
+
+  const memberBtn = document.querySelector(".member-btn");
+
+  memberBtn.addEventListener("click", () => {
+    modalEL.classList.add("open");
+  });
+
+
+
 
   const sr = ScrollReveal({
     origin: "top",

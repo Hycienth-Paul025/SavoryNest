@@ -1,15 +1,14 @@
-.header{
-@include sectpad;
-display: flex;
-justify-content: center;
-align-items: center;
-overflow: hidden;
+.header {
+  @include sectpad;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 
 
-   @include screen(tab-port){
-   flex-direction: column-reverse;
+
+  @include screen(tab-port) {
+    flex-direction: column-reverse;
     row-gap: 4rem;
-   } 
-
-
+  }
 }

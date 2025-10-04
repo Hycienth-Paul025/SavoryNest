@@ -57,25 +57,18 @@
       z-index: 3;
       transition: 0.2s ease;
 
-    
-
       &.show {
         left: 0;
       }
-
     }
 
+    @include screen(mobile-land) {
+      height: 100%;
+    }
 
-@include screen (mobile-land){
-  height: 100%;
-}
-
-
-
-      @include screen(sm-mobile) {
-        height: 100%;
-
-      }
+    @include screen(sm-mobile) {
+      height: 100%;
+    }
   }
 
   /// navbar item
@@ -96,6 +89,7 @@
   &-list {
     font-size: 1.3rem;
     font-weight: 600;
+    letter-spacing: 1.7px;
 
     @include screen(tab-port) {
       font-size: 3rem;
@@ -168,8 +162,13 @@
     margin-left: 10rem;
     padding-right: 1rem;
 
-    @include screen(tab-land){
-      margin-left: 6rem;
+   
+    @include screen (XX-lg-port){
+      margin-left: 4rem;
+    }
+
+    @include screen(tab-land) {
+      margin-left: 5rem;
       padding: 0;
     }
 
@@ -180,6 +179,7 @@
       right: 5rem;
     }
 
+
     &-icon {
       position: absolute;
       fill: $color-white;
@@ -189,24 +189,23 @@
       transition: fill 0.3s;
       display: none;
 
+
       @include screen(tab-port) {
         width: 5rem;
         height: 5rem;
       }
 
+
       // Show the active icon
       &.activate {
         display: block; // Use block to make it visible
       }
- 
-      
+
+
       &:hover {
         fill: $color-heading;
       }
 
-
-    } 
-
+    }
   }
-
 }
